@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/kkccss.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에스안과</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=040375a28286e08d1ba8b77ed913bf78"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#menuimport").load("./menubar.html");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footerimport").load("./footer.html");
+      });
+    </script>
+  </head>
+
+  <body id="kkc">
+    <div id="menuimport"></div>
+    <div class="common">
+      <div
+        class="banner disease"
+        style="background-image: url('./img/content-banner/online-top.png')"
+      ></div>
+      <div class="breadcrumb row">
+        <a href="/"><img src="./img/common/bread_home.png" /></a>
+        <div class="row">
+          <div class="menu1">
+            <div class="current block row justify-between">
+              예약/상담<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="/seyeintroduce.html" class="block row justify-between">
+              에스안과
+            </a>
+            <a href="./vision-center.html" class="block row justify-between">
+              시력교정
+            </a>
+            <a href="./cataract-center.html" class="block row justify-between">
+              노안/백내장
+            </a>
+            <a href="./oneday-retina.html" class="block row justify-between">
+              망막/황반변성
+            </a>
+            <a href="./dryeye.html" class="block row justify-between">
+              안구건조증
+            </a>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              녹내장
+            </a>
+            <a href="./child-center.html" class="block row justify-between">
+              소아안과
+            </a>
+            <a href="./cosmetic-ptosis.html" class="block row justify-between">
+              안성형
+            </a>
+            <a href="./reservation.html" class="block row justify-between"
+              >예약/상담</a
+            >
+          </div>
+          <div class="menu2">
+            <div class="current block row justify-between">
+              이벤트 <img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="./reservation.html" class="block row justify-between">
+              온라인예약
+            </a>
+            <a href="./onlinecouns.html" class="block row justify-between">
+              온라인상담
+            </a>
+            <a href="./seyekakao.html" class="block row justify-between">
+              카톡상담
+<!--             </a>
+            <a href="./seyeqna.html" class="block row justify-between">
+              자주하는 질문
+            </a> -->
+            <a href="./surafter.html" class="block row justify-between">
+              수술후기
+            </a>
+            <a href="./seyeevent.html" class="block row justify-between">
+              이벤트</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="seyeevent light2">
+      <div class="list">
+        <div class="row justify-between">
+          <!-- 반복 style에 썸네일 이미지 넣으면 됩니다. -->
+          <div class="article">
+            <a href="#">
+              <div class="thumb" style="background-image: none"></div
+            ></a>
+            <div class="title">
+              <a class="t-22" href="#">에스안과 이벤트 게시물</a>
+              <div class="divider"></div>
+              <div class="date t-20">2022.03.02 ~ 2022.04.30</div>
+            </div>
+          </div>
+          <!-- 반복 -->
+          <div class="article">
+            <a href="#">
+              <div class="thumb" style="background-image: none"></div
+            ></a>
+            <div class="title">
+              <a class="t-22" href="#">에스안과 이벤트 게시물</a>
+              <div class="divider"></div>
+              <div class="date t-20">2022.03.02 ~ 2022.04.30</div>
+            </div>
+          </div>
+          <div class="article">
+            <a href="#">
+              <div class="thumb" style="background-image: none"></div
+            ></a>
+            <div class="title">
+              <a class="t-22" href="#">에스안과 이벤트 게시물</a>
+              <div class="divider"></div>
+              <div class="date t-20">2022.03.02 ~ 2022.04.30</div>
+            </div>
+          </div>
+          <div class="article">
+            <a href="#">
+              <div class="thumb" style="background-image: none"></div
+            ></a>
+            <div class="title">
+              <a class="t-22" href="#">에스안과 이벤트 게시물</a>
+              <div class="divider"></div>
+              <div class="date t-20">2022.03.02 ~ 2022.04.30</div>
+            </div>
+          </div>
+          <div class="article">
+            <a href="#">
+              <div class="thumb" style="background-image: none"></div
+            ></a>
+            <div class="title">
+              <a class="t-22" href="#">에스안과 이벤트 게시물</a>
+              <div class="divider"></div>
+              <div class="date t-20">2022.03.02 ~ 2022.04.30</div>
+            </div>
+          </div>
+          <div class="article">
+            <a href="#">
+              <div class="thumb" style="background-image: none"></div
+            ></a>
+            <div class="title">
+              <a class="t-22" href="#">에스안과 이벤트 게시물</a>
+              <div class="divider"></div>
+              <div class="date t-20">2022.03.02 ~ 2022.04.30</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 페이지네이션 -->
+      <div class="list-pagination regular">
+        <ul class="list-pagination-list">
+          <li class="first">
+            <a href="#"><img src="./img/notice/first.png" alt="" /></a>
+          </li>
+          <li class="prev">
+            <a href="#"><img src="./img/notice/prev.png" alt="" /></a>
+          </li>
+          <!-- 현재페이지 active class 적용 -->
+          <li class="page active"><a href="#">1</a></li>
+          <li class="page"><a href="#">2</a></li>
+          <li class="page"><a href="#">3</a></li>
+          <li class="page"><a href="#">4</a></li>
+          <li class="page"><a href="#">5</a></li>
+          <li class="page"><a href="#">6</a></li>
+          <li class="page"><a href="#">7</a></li>
+          <li class="page"><a href="#">8</a></li>
+          <li class="page"><a href="#">9</a></li>
+          <li class="page"><a href="#">10</a></li>
+          <li class="next">
+            <a href="#"><img src="./img/notice/next.png" alt="" /></a>
+          </li>
+          <li class="last">
+            <a href="#"><img src="./img/notice/last.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="list-search">
+        <form name="formSearch" action="" method="post">
+          <select name="option">
+            <option value="all">전체</option>
+            <option value="title">제목</option>
+            <option value="content">내용</option>
+          </select>
+          <input name="query" type="text" />
+          <input type="submit" value="검색" />
+        </form>
+      </div>
+      <div id="footerimport"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./js/common.js"></script>

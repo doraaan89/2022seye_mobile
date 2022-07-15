@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/kkccss.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에스안과</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=040375a28286e08d1ba8b77ed913bf78"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#menuimport").load("./menubar.html");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footerimport").load("./footer.html");
+      });
+    </script>
+  </head>
+
+  <body id="kkc">
+    <div id="menuimport"></div>
+    <div class="common">
+      <div
+        class="banner disease"
+        style="background-image: url('./img/content-banner/glaucoma.png')"
+      ></div>
+      <div class="breadcrumb row">
+        <a href="/"><img src="./img/common/bread_home.png" /></a>
+        <div class="row">
+          <div class="menu1">
+            <div class="current block row justify-between">
+              녹내장<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="/seyeintroduce.html" class="block row justify-between">
+              에스안과
+            </a>
+            <a href="./vision-center.html" class="block row justify-between">
+              시력교정
+            </a>
+            <a href="./cataract-center.html" class="block row justify-between">
+              노안/백내장
+            </a>
+            <a href="./oneday-retina.html" class="block row justify-between">
+              망막/황반변성
+            </a>
+            <a href="./dryeye.html" class="block row justify-between">
+              안구건조증
+            </a>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              녹내장
+            </a>
+            <a href="./child-center.html" class="block row justify-between">
+              소아안과
+            </a>
+            <a href="./cosmetic-ptosis.html" class="block row justify-between">
+              안성형
+            </a>
+            <a href="./reservation.html" class="block row justify-between"
+              >예약/상담</a
+            >
+          </div>
+          <div class="menu2">
+            <div class="current block row justify-between">
+              녹내장이란<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              1Day 녹내장 정밀 검사
+            </a>
+            <a href="#" class="block row justify-between"> 녹내장이란 </a>
+            <a href="./glaucoma-treat.html" class="block row justify-between">
+              녹내장 치료
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="glaucoma-info light2">
+      <section class="section1">
+        <div class="title">
+          <div class="">녹내장</div>
+          <div>
+            소리없는 시력도둑 녹내장<br />
+            <span class="bold">조기 발견이 중요합니다</span>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="t-65 bold">녹내장이란?</div>
+        <div class="row justify-between">
+          <img src="./img/glaucoma-info/section2_img1.png" />
+          <div class="right">
+            <div class="t-25 regular">
+              1. 눈으로 받아들인 빛을 뇌로 전달하는 시신경에 이상이 생겨,<br />
+              그 결과 <span class="bold">시야 결손이 나타나는 질환입니다.<br /><br /></span>
+            </div>
+            <div class="t-25 regular">
+              2. 시야에 부분적으로 안보이는 부분이 생기게 되고 치료하지 않고<br />
+              <span class="bold"
+                >방치하면 시야결손이 점점 커져 심한 경우 실명에 이를 수 있습니다.<br /><br /></span
+              > 
+            </div>
+            <div class="t-25 regular">
+              3.전 인구의 2% 정도로 흔한 안과 질환 중 하나이며 전세계적으로<br />
+              <span class="bold"
+                >백내장, 당뇨망막증과 함께 실명의 가장 큰 원인이며,</span
+              >예방할 수 있는 실명의 가장 큰 원인입니다. <br /><br />
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3 t-center">
+        <div class="t-65 bold">녹내장의 원인</div>
+        <div class="t-25 thin">
+          녹내장의 주된 원인은 시신경 손상과 혈류장애로 인해 발생합니다.
+        </div>
+        <img src="./img/glaucoma-info/section3_img1.png" alt="" />
+        <div class="regular t-25">
+          녹내장이 발생하는 원인은 안압(눈의 압력)이 높아서 발생할 수 있지만 정산 수준이어도<br />
+          <span class="bold"
+            >안압의 하루 중 변동폭이 크거나 시신경으로 가는 혈액 순환이 잘 안되는 경우,<br /> 유전적 원인 </span
+          >
+         
+          등으로 인해 발생할 수 있습니다.
+        </div>
+      </section>
+
+      <section class="section4 t-center">
+        <div class="t-65 bold">녹내장 증상</div>
+        <div class="t-33 light2">
+          <span class="bold">소리없이 찾아 오는</span> 무서운 녹내장
+        </div>
+        <div class="row justify-between medium">
+          <div>정상안</div>
+          <div>초기 녹내장</div>
+          <div>말기 녹내장</div>
+        </div>
+        <div class="t-25 l1 regular">
+          초기에는 자각증상이 없다가 점차 시야가 좁아지면서 말기가 되면 시야의
+          답답함을 느끼고, 더 진행이 되면 결국 실명까지 이르게 됩니다.
+        </div>
+      </section>
+      <section class="section5 t-center">
+        <div class="t-65 bold">녹내장 종류</div>
+        <div class="t-25">
+          녹내장은 개방각 녹내장, 폐쇄각 녹내장, 선천적 녹내장, 이차성녹내장으로
+          구분됩니다.
+        </div>
+
+        <div class="row justify-between">
+          <div class="box">
+            <div class="top t-35 medium">01. 만성 개방각 녹내장</div>
+            <div class="mid">
+              <img src="./img/glaucoma-info/section5_img1.png" alt="" />
+            </div>
+            <div class="btm">
+              <div class="l1 bold">
+                아무 자각증상 없이 찾아오며 증상이 인지 할 땐 녹내장 말기
+              </div>
+              <div class="l2 medium">
+                방수가 섬유주까지 정상적으로 흘러 들어가지만 섬유주<br />
+                이후에방수 유출에 문제가 발생하고 수년간에 걸쳐 안압이 <br />
+                서서히 증가하여 발생하는 대표적 녹내장 입니다.
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="top t-35 medium">02. 급성 폐쇄각 녹내장</div>
+            <div class="mid">
+              <img src="./img/glaucoma-info/section5_img2.png" alt="" />
+            </div>
+            <div class="btm">
+              <div class="l1 bold">
+                심한 안구 통증과 두통, 어지러움증 등의 증상
+              </div>
+              <div class="l2 medium">
+                홍채가 섬유주를 막으면서 방수 유출이 원할하게 <br />
+                이루어지지 않아 발생하며 안압을 조절하는 시기를 <br />
+                놓치면 영구적인 실명을 하게 됩니다.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-between row2">
+          <div class="box">
+            <div class="top t-35 medium">03. 선천성 녹내장</div>
+            <div class="mid">
+              <img src="./img/glaucoma-info/section5_img3.png" alt="" />
+            </div>
+            <div class="btm">
+              <div class="l1 bold">
+                눈부심 증상과 눈을 제대로 뜨지 못하며 눈물을 자주 흘림
+              </div>
+              <div class="l2 medium">
+                선천적으로 방수 유출로가 생성되지 않아 발생하는<br />
+                녹내장이며 소아의 80~90%는 1세 이전에 발생합니다.
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="top t-35 medium">04. 이차성 녹내장</div>
+            <div class="mid">
+              <img src="./img/glaucoma-info/section5_img4.png" alt="" />
+            </div>
+            <div class="btm">
+              <div class="l1 bold">
+                이차 원인에 따른 정확한 질병을 파악 후 병행하여 치료
+              </div>
+              <div class="l2 medium">
+                외상 또는 백내장 수술 등의 안과 수술, 당뇨, 고혈압, 포도막염,<br />
+                백내장, 스테로이드 안약을 장기간 사용한 경우 다양한 원인에<br />
+                의하여 발병할 수 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section6 t-center">
+        <div class="t-65">
+          에스안과의 <span class="bold">안전한 수술시스템</span>
+        </div>
+        <div class="row justify-between">
+          <div class="box">
+            <div class="up">
+              <img src="./img/glaucoma-1day/section6_img1.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="title t-25 medium">UPS 무정전 시스템</div>
+              <div class="t-25 thin">
+                정전 등 천재지변의 상황이 발생해도 <br />
+                전원을 안전하게 공급할 수 있는<br />
+                장치를 보유
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <img src="./img/glaucoma-1day/section6_img2.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="title t-25 medium">365일 항온 학습</div>
+              <div class="t-25 thin">
+                수술실은 가장 적합한 온도인 섭씨<br />
+                20도와 최적 습도 40%를 <br />
+                항상 일정하게 유지
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <img src="./img/glaucoma-1day/section6_img3.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="title t-25 medium">완벽한 멸균 시스템</div>
+              <div class="t-25 thin">
+                수술실은 항상 완벽한<br />
+                멸균관리를 진행하며<br />
+                청결하게 관리
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section7 t-center">
+        <div class="t-65 bold">시야가 좁아졌다 느끼면 이미 늦었습니다</div>
+        <div class="t-65 regular">
+          조기검진을 통해서 관리하는 것이 중요합니다
+        </div>
+      </section>
+      <section class="section8 t-center">
+        <div class="t-65 bold">녹내장 조기 검사 대상</div>
+        <div class="row between justify-between">
+          <img src="./img/glaucoma-1day/section8_img1.png" alt="" />
+          <div class="right t-30 t-left">
+            <span class="bolder">·</span> 40세 이후 중장년층일 경우<br />
+            <span class="bolder">·</span> 고도근시가 있는 경우<br />
+            <span class="bolder">·</span> 건강검진 상 안압이 높은 경우<br />
+            <span class="bolder">·</span> 가족 중에 녹내장 환자가 있는 경우<br />
+            <span class="bolder">·</span> 당뇨, 고혈압, 동맥경화 등 혈관질환이
+            있는 경우<br />
+            <span class="bolder">·</span> 재발성 포도막염이 있는 경우<br />
+            <span class="bolder">·</span> 편두통이 지속적으로 반복되는 경우
+          </div>
+        </div>
+      </section>
+      
+      <div id="footerimport" style="padding-top: 150px"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./js/common.js"></script>

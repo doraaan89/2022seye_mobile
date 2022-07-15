@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="./css/kkccss.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에스안과</title><script
+  type="text/javascript"
+  src="//dapi.kakao.com/v2/maps/sdk.js?appkey=040375a28286e08d1ba8b77ed913bf78"
+></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#menuimport").load("./menubar.html");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footerimport").load("./footer.html");
+      });
+    </script>
+  </head>
+
+  <body id="kkc">
+    <div id="menuimport"></div>
+    <div class="common">
+      <div
+        class="banner disease"
+        style="background-image: url('./img/content-banner/contribution.png')"
+      ></div>
+      <div class="breadcrumb row">
+        <a href="/"><img src="./img/common/bread_home.png" /></a>
+        <div class="row">
+          <div class="menu1">
+            <div class="current block row justify-between">
+              에스안과<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+           <a href="/seyeintroduce.html" class="block row justify-between"> 에스안과 </a>
+            <a href="./vision-center.html" class="block row justify-between">
+              시력교정
+            </a>
+            <a href="./cataract-center.html" class="block row justify-between"> 노안/백내장 </a>
+            <a href="./oneday-retina.html" class="block row justify-between"> 망막/황반변성 </a>
+            <a href="./dryeye.html" class="block row justify-between">
+              안구건조증
+            </a>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              녹내장
+            </a>
+            <a href="./child-center.html" class="block row justify-between">
+              소아안과
+            </a>
+            <a href="./cosmetic-ptosis.html" class="block row justify-between">
+              안성형
+            </a>
+            <a href="./onlinecouns.html" class="block row justify-between">예약/상담</a>
+          </div>
+          <div class="menu2">
+            <div class="current block row justify-between">
+              사회공헌<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="/seyeintroduce.html" class="block row justify-between"> 에스안과소개 </a>
+            <a href="./doctors.html" class="block row justify-between">
+              의료진소개
+            </a>
+            <a href="./contribution.html" class="block row justify-between">
+                사회공헌
+              </a>
+            <a href="./gallery.html" class="block row justify-between">
+              병원둘러보기</a
+            >
+            <a href="./location.html" class="block row justify-between">
+              찾아오시는길/진료시간
+            </a>
+            <a href="./notice.html" class="block row justify-between"> 에스안과소식 </a>
+            
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contiribution">
+      <div class="menubar">
+        <div class="row t-20 t-center">
+          <!-- 태그 -->
+          <a href="#" class="btn active" style="width: 110px">ALL</a>
+          <a href="#" class="btn">#초지복지관</a>
+          <a href="#" class="btn">#무료강의</a>
+          <a href="#" class="btn">#사회협약</a>
+          <a href="#" class="btn">#인천병무지청</a>
+          <a href="#" class="btn">#소외계층진료</a>
+        </div>
+      </div>
+      <div class="gallery row justify-between">
+        <div class="article">
+          <!-- 반복시작 -->
+          <div class="thumbnail">
+            <!-- 썸네일 -->
+            <img src="./img/contribution/thumb_12.png" alt="" />
+          </div>
+          <div class="box">
+            <!-- 태그, 제목, 내용요약 -->
+            <div class="tag t-25">초지복지관</div>
+            <a href="#" class="title medium">책/전기장판 기증</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_11.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">초지복지관</div>
+            <a href="#" class="title medium">전병세트 기부</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_10.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">초지복지관</div>
+            <a href="#" class="title medium">떡국 떡 기부</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_9.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">지역사회 강의</div>
+            <a href="#" class="title medium">단원구 노인복지관 강연</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_8.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">지역사회 강의</div>
+            <a href="#" class="title medium">좋은이웃 강의</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_7.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">지역사회 강의</div>
+            <a href="#" class="title medium">초지복지관 백내장 강의</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_6.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">복지관 진료</div>
+            <a href="#" class="title medium">초지복지관 백내장 강의</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_5.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">무료 눈진료</div>
+            <a href="#" class="title medium">외국인노동자 무료 눈 진료</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_4.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">협약</div>
+            <a href="#" class="title medium">1388 의료지원단</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_3.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">초지복지관 협약</div>
+            <a href="#" class="title medium">다시, 봄 협약</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_2.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">기관협약</div>
+            <a href="#" class="title medium">경기도 농아인협회 협약</a>
+            <div class="content"></div>
+          </div>
+        </div>
+        <div class="article">
+          <div class="thumbnail">
+            <img src="./img/contribution/thumb_1.png" alt="" />
+          </div>
+          <div class="box">
+            <div class="tag">인천병무지청 협약</div>
+            <a href="#" class="title medium">슈퍼굳건이 협약</a>
+            <div class="content"></div>
+          </div>
+        </div>
+      </div>
+<div id="footerimport"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./js/common.js"></script>

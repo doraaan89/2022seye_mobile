@@ -1,0 +1,244 @@
+<!-- 
+Slick
+-License: MIT
+-Copyright: http://kenwheeler.github.io/slick/
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/kkccss.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에스안과</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=040375a28286e08d1ba8b77ed913bf78"
+    ></script>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#menuimport").load("./menubar.html");
+        $("#footerimport").load("./footer.html");
+      });
+    </script>
+  </head>
+
+  <body id="kkc">
+    <div id="menuimport"></div>
+    <div class="common">
+      <div
+        class="banner disease"
+        style="background-image: url('./img/content-banner/look-around.png')"
+      ></div>
+      <div class="breadcrumb row">
+        <a href="/"><img src="./img/common/bread_home.png" /></a>
+        <div class="row">
+          <div class="menu1">
+            <div class="current block row justify-between">
+              에스안과<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="/seyeintroduce.html" class="block row justify-between">
+              에스안과
+            </a>
+            <a href="./vision-center.html" class="block row justify-between">
+              시력교정
+            </a>
+            <a href="./cataract-center.html" class="block row justify-between">
+              노안/백내장
+            </a>
+            <a href="./oneday-retina.html" class="block row justify-between">
+              망막/황반변성
+            </a>
+            <a href="./dryeye.html" class="block row justify-between">
+              안구건조증
+            </a>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              녹내장
+            </a>
+            <a href="./child-center.html" class="block row justify-between">
+              소아안과
+            </a>
+            <a href="./cosmetic-ptosis.html" class="block row justify-between">
+              안성형
+            </a>
+            <a href="./onlinecouns.html" class="block row justify-between"
+              >예약/상담</a
+            >
+          </div>
+          <div class="menu2">
+            <div class="current block row justify-between">
+              병원둘러보기<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="./seyeintroduce.html" class="block row justify-between">
+              에스안과소개
+            </a>
+            <a href="./doctors.html" class="block row justify-between">
+              의료진소개
+            </a>
+            <a href="./contribution.html" class="block row justify-between">
+              사회공헌
+            </a>
+            <a href="./gallery.html" class="block row justify-between">
+              병원둘러보기</a
+            >
+            <a href="./location.html" class="block row justify-between">
+              찾아오시는길/진료시간
+            </a>
+            <a href="./notice.html" class="block row justify-between">
+              에스안과 소식
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="wrapper">
+        <div class="menu row medium">
+          <div class="btn btn1 active">일반 진료센터</div>
+          <div class="divider"></div>
+          <div class="btn btn2">시력교정 진료센터</div>
+          <div class="divider"></div>
+          <div class="btn btn3">백내장 진료센터</div>
+          <div class="divider"></div>
+          <div class="btn btn4">수술 센터</div>
+        </div>
+        <div class="content1 content">
+          <!-- 일반 진료센터 -->
+          <img src="./img/gallery/maincenter_1.png" alt="" />
+          <img src="./img/gallery/maincenter_2.png" alt="" />
+          <img src="./img/gallery/maincenter_3.png" alt="" />
+          <img src="./img/gallery/maincenter_4.png" alt="" />
+          <img src="./img/gallery/maincenter_5.png" alt="" />
+          <img src="./img/gallery/maincenter_6.png" alt="" />
+          <img src="./img/gallery/maincenter_7.png" alt="" />
+        </div>
+        <div class="content2 content">
+          <!-- 시력교정 진료센터 -->
+          <img src="./img/gallery/lasik_1.png" alt="" />
+          <img src="./img/gallery/lasik_2.png" alt="" />
+          <img src="./img/gallery/lasik_3.png" alt="" />
+          <img src="./img/gallery/lasik_4.png" alt="" />
+          <img src="./img/gallery/lasik_5.png" alt="" />
+        </div>
+        <div class="content3 content">
+          <!-- 백내장 진료센터 -->
+          <img src="./img/gallery/surgery_1.png" alt="" />
+          <img src="./img/gallery/surgery_1.png" alt="" />
+          <img src="./img/gallery/surgery_1.png" alt="" />
+        </div>
+        <div class="content4 content">
+          <!-- 수술 센터 -->
+          <img src="./img/gallery/surgery_1.png" alt="" />
+          <img src="./img/gallery/surgery_1.png" alt="" />
+          <img src="./img/gallery/surgery_1.png" alt="" />
+        </div>
+      </div>
+      <div class="pagination row justify-between light">
+        <div class="prev"><img src="./img/gallery/prev.png" alt="" /></div>
+
+        <div class="next"><img src="./img/gallery/next.png" alt="" /></div>
+      </div>
+      <div class="pagination-wrap">
+        <div class="title regular"></div>
+        <div class="summary light"></div>
+      </div>
+      <div id="footerimport" style="padding-top: 150px"></div>
+    </div>
+  </body>
+</html>
+<script>
+  $(document).ready(function () {
+    const contents = $(".content");
+    let current = $(".content1");
+    $(".content1").slick({
+      arrows: false,
+      draggable: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+    $(".content2").slick({
+      arrows: false,
+      draggable: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+    $(".content3").slick({
+      arrows: false,
+      draggable: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+    $(".content4").slick({
+      arrows: false,
+      draggable: false,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    });
+    $(".menu .btn").click(function () {
+      $(".menu .btn").removeClass("active");
+      $(this).addClass("active");
+    });
+    $(".menu .btn1").click(function () {
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].classList.add("d-none");
+      }
+      contents[0].classList.remove("d-none");
+      $(".pagination-wrap .title").text("");
+      $(".pagination-wrap .summary").text("");
+      current = $(".content1");
+    });
+    $(".menu .btn2").click(function () {
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].classList.add("d-none");
+      }
+      contents[1].classList.remove("d-none");
+      $(".pagination-wrap .title").text("");
+      $(".pagination-wrap .summary").text("");
+      current = $(".content2");
+    });
+    $(".menu .btn3").click(function () {
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].classList.add("d-none");
+      }
+      contents[2].classList.remove("d-none");
+      $(".pagination-wrap .title").text("");
+      $(".pagination-wrap .summary").text("");
+      current = $(".content3");
+    });
+    $(".menu .btn4").click(function () {
+      for (let i = 0; i < contents.length; i++) {
+        contents[i].classList.add("d-none");
+      }
+      contents[3].classList.remove("d-none");
+      $(".pagination-wrap .title").text("");
+      $(".pagination-wrap .summary").text("");
+      current = $(".content4");
+    });
+    $(".pagination .prev").click(function () {
+      current.slick("slickPrev");
+      /*       $(".pagination .page .now").text(
+        $(".content").slick("slickCurrentSlide") + 1
+      ); */
+    });
+    $(".pagination .next").click(function () {
+      current.slick("slickNext");
+      /*       $(".pagination .page .now").text(
+        $(".content").slick("slickCurrentSlide") + 1
+      ); */
+    });
+  });
+</script>
+
+<script src="./js/common.js"></script>

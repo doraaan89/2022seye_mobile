@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/kkccss.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에스안과</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=040375a28286e08d1ba8b77ed913bf78"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#menuimport").load("./menubar.html");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footerimport").load("./footer.html");
+      });
+    </script>
+  </head>
+
+  <body id="kkc">
+    <div id="menuimport"></div>
+    <div class="common">
+      <div
+        class="banner disease"
+        style="background-image: url('./img/content-banner/glaucoma.png')"
+      ></div>
+      <div class="breadcrumb row">
+        <a href="/"><img src="./img/common/bread_home.png" /></a>
+        <div class="row">
+          <div class="menu1">
+            <div class="current block row justify-between">
+              녹내장<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="./seyeintroduce.html" class="block row justify-between">
+              에스안과
+            </a>
+            <a href="./vision-center.html" class="block row justify-between">
+              시력교정
+            </a>
+            <a href="./cataract-center.html" class="block row justify-between">
+              노안/백내장
+            </a>
+            <a href="./oneday-retina.html" class="block row justify-between">
+              망막/황반변성
+            </a>
+            <a href="./dryeye.html" class="block row justify-between">
+              안구건조증
+            </a>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              녹내장
+            </a>
+            <a href="./child-center.html" class="block row justify-between">
+              소아안과
+            </a>
+            <a href="./cosmetic-ptosis.html" class="block row justify-between">
+              안성형
+            </a>
+            <a href="./reservation.html" class="block row justify-between"
+              >예약/상담</a
+            >
+          </div>
+          <div class="menu2">
+            <div class="current block row justify-between">
+              녹내장 치료<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              1Day 녹내장 정밀 검사
+            </a>
+            <a href="./glaucoma-info.html" class="block row justify-between">
+              녹내장이란
+            </a>
+            <a href="#" class="block row justify-between"> 녹내장 치료 </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="glaucoma-treat light2">
+      <section class="section1">
+        <div class="title">
+          <div class="">녹내장 치료</div>
+          <div>
+            소리없는 시력도둑 녹내장<br />
+            <span class="bold">조기 발견이 중요합니다</span>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="t-65 bold">녹내장치료</div>
+        <div class="row justify-between">
+          <img src="./img/glaucoma-treat/section2_img1.png" />
+          <div class="right">
+            <div class="t-25 thin">
+              1. 
+              <span class="bold"
+                >녹내장은 완치가 되는 병이 아니라 당뇨나 고혈압처럼<br />
+                지속적으로 관리하는 병입니다.</span
+              ><br />
+              원인 및 상태에 따라 적절한 치료법을 선택하는데 많은 경우<br />
+              안압을 하강시키는 데 초점을 맞추게 됩니다.<br /><br />
+            </div>
+            <div class="t-25 thin">
+              2. 녹내장의 치료 목적은 더 이상 <br />
+            
+              <span class="bold"
+                >시신경 손상이 진행되지 않도록 하는 것입니다.<br />
+                </span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3 t-center">
+        <div class="t-65 bold">녹내장의 치료방법</div>
+        <div class="row justify-between">
+          <div class="box">
+            <img src="./img/glaucoma-treat/section3_img1.png" alt="" />
+            <div class="circle regular t-20">약물 치료</div>
+          </div>
+          <div class="box">
+            <img src="./img/glaucoma-treat/section3_img2.png" alt="" />
+            <div class="circle regular t-20">레이저 치료</div>
+          </div>
+          <div class="box">
+            <img src="./img/glaucoma-treat/section3_img3.png" alt="" />
+            <div class="circle regular t-20">수술적 치료</div>
+          </div>
+        </div>
+        <div class="t-25">
+          녹내장은 다양한 치료방법으로 시신경의 장애를 최소화하는 것이 목적이며
+          상태에 따라 약물, 레이저, 수술 등의 치료가 진행됩니다.<br />
+          <br /><br />
+        </div>
+      </section>
+
+      <section class="section4 t-center">
+        <div class="row justify-between">
+          <div class="left"></div>
+          <div class="right t-left">
+            <div class="t-55 bold">약물 치료 방법</div>
+            <div class="t-25 thin">
+              녹내장은 <span class="bold">약물을 치료</span>로 안압을 떨어뜨리는
+              <span class="bold"
+                >치료가<br />
+                먼저 진행</span
+              >
+              됩니다.
+            </div>
+            <div class="divider"></div>
+            
+        </div>
+      </section>
+      <section class="section6 t-center">
+        <div class="t-55 bold">레이저 치료 방법</div>
+        <div class="t-25">
+          홍채 절개술은
+          <span class="bold"
+            >급성 폐쇄각 녹내장인 경우 홍채에 구멍을 만들어 방수가<br />
+            정상적인 기능</span
+          >을 할 수 있도록 하는 레이저 치료입니다.
+        </div>
+        <div class="row justify-between">
+          <div class="t-20">홍채를 레이저로 조사</div>
+          <div class="t-20">홍채절개술을 통해 방수 유출 촉진</div>
+        </div>
+        <div class="t-23 t-left">
+          레이저 홍채절개술은 눈 속 방수가 원활하게 흐르는배출로인 우각이 좁아져
+          나타나는
+          <span class="bold"
+            >급성 폐쇄각 녹내장에서<br />
+            많이 사용하는 방법</span
+          >입니다. 방수 배출로가 막히게 되면 안압이 상승하면서 시신경이 손상되어
+          시야가 점차<br />
+          좁아지게 됩니다. 이 때 레이저로 홍채에 구멍을 내어 방수의 흐름을
+          원활하게 만드는 레이저 홍채절개술을 <br />
+          시행할 수 있습니다.
+        </div>
+      </section>
+
+
+
+      <section class="section5 t-center">
+        <div class="t-55 bold">수술적 치료 방법</div>
+        <div class="t-25 thin">
+          앞선 치료에 의해서도
+          <span class="bold"
+            >시신경 손상이 진행될 경우 수술적 치료 방법을 고려합니다.</span
+          ><br />
+          
+        </div>
+
+        <div class="row justify-between">
+          <div class="left t-left">
+            <div class="top">
+              <span class="circle bold t-20">01</span
+              ><span class="bold t-35">섬유주절제술</span>
+            </div>
+            <div class="mid">
+              <div class="t-20 regular">
+                전방과 결막 아래 공간에 방수를 배출할 수 있는 출구를 만드는 수술
+              </div>
+              <div class="t-23">
+                섬유주절세술은 전방과 결막 아래 공간 사이에 방수가 빠져나갈 수
+                있는 <br />
+                출구를 만들어 안압을 떨어뜨리는 수술입니다. 수술기법이
+                발달하면서 <br />
+                합병증을 최소화 할 수 있으며 수술 후에도 레이저로 전방에서
+                방수가 <br />
+                빠져나가는 정도를 조절해 수술의 성공률이 높습니다.
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="./img/glaucoma-treat/section5_img1.png" alt="" />
+          </div>
+        </div>
+        <div class="row justify-between">
+          <div class="right">
+            <img src="./img/glaucoma-treat/section5_img2.png" alt="" />
+          </div>
+          <div class="left t-left" style="padding-right: 47px">
+            <div class="top">
+              <span class="circle bold t-20">02</span
+              ><span class="bold t-35">방수유출장치삽입술 </span>
+            </div>
+            <div class="mid">
+              <div class="t-20 regular" style="width: 590px">
+                방수유출장치 관을 삽입하여 전방내의 방수가 빠져 나갈 수 있도록
+                하는 수술
+              </div>
+              <div class="t-23">
+                포도막염, 신생혈관녹내장으로 인한 2차 녹내장, 외상 후에
+                발생한<br />
+                녹내장 그리고 재수술을 하는 경우 방수유출장치를 통해 수술이
+                진행<br />
+                됩니다. 방수 유출장치는 관을 삽입하여 전방내의 방수를 결막
+                아래<br />
+                공간을 빠져나가게 만들어 안압을 유지합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section7 t-center">
+        <div class="box">
+          <iframe
+            width="1393"
+            height="843"
+            src="https://www.youtube.com/embed/ywOKumaFASg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section class="section8 t-center">
+        <div class="t-65">
+          에스안과의 <span class="bold">안전한 수술시스템</span>
+        </div>
+        <div class="row justify-between">
+          <div class="box">
+            <div class="up">
+              <img src="./img/glaucoma-1day/section6_img1.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="title t-25 medium">UPS 무정전 시스템</div>
+              <div class="t-25 thin">
+                정전 등 천재지변의 상황이 발생해도 <br />
+                전원을 안전하게 공급할 수 있는<br />
+                장치를 보유
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <img src="./img/glaucoma-1day/section6_img2.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="title t-25 medium">365일 항온 학습</div>
+              <div class="t-25 thin">
+                수술실은 가장 적합한 온도인 섭씨<br />
+                20도와 최적 습도 40%를 <br />
+                항상 일정하게 유지
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <img src="./img/glaucoma-1day/section6_img3.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="title t-25 medium">완벽한 멸균 시스템</div>
+              <div class="t-25 thin">
+                수술실은 항상 완벽한<br />
+                멸균관리를 진행하며<br />
+                청결하게 관리
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section9 t-center">
+        <div class="t-65 bold">시야가 좁아졌다 느끼면 이미 늦었습니다</div>
+        <div class="t-65 regular">
+          조기검진을 통해서 관리하는 것이 중요합니다
+        </div>
+      </section>
+      <section class="section10 t-center">
+        <div class="t-65 bold">녹내장 조기 검사 대상</div>
+        <div class="row between justify-between">
+          <img src="./img/glaucoma-1day/section8_img1.png" alt="" />
+          <div class="right t-30 t-left">
+            <span class="bolder">·</span> 40세 이후 중장년층일 경우<br />
+            <span class="bolder">·</span> 고도근시가 있는 경우<br />
+            <span class="bolder">·</span> 건강검진 상 안압이 높은 경우<br />
+            <span class="bolder">·</span> 가족 중에 녹내장 환자가 있는 경우<br />
+            <span class="bolder">·</span> 당뇨, 고혈압, 동맥경화 등 혈관질환이
+            있는 경우<br />
+            <span class="bolder">·</span> 재발성 포도막염이 있는 경우<br />
+            <span class="bolder">·</span> 편두통이 지속적으로 반복되는 경우
+          </div>
+        </div>
+      </section>
+      
+      <div id="footerimport" style="padding-top: 150px"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./js/common.js"></script>

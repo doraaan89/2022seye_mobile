@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/kkccss.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에스안과</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=040375a28286e08d1ba8b77ed913bf78"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#menuimport").load("./menubar.html");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footerimport").load("./footer.html");
+      });
+    </script>
+  </head>
+
+  <body id="kkc">
+    <div id="menuimport"></div>
+    <div class="common">
+      <div
+        class="banner disease"
+        style="background-image: url('./img/content-banner/doctors.png')"
+      ></div>
+      <div class="breadcrumb row">
+        <a href="/"><img src="./img/common/bread_home.png" /></a>
+        <div class="row">
+          <div class="menu1">
+            <div class="current block row justify-between">
+              에스안과<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="/seyeintroduce.html" class="block row justify-between">
+              에스안과
+            </a>
+            <a href="./vision-center.html" class="block row justify-between">
+              시력교정
+            </a>
+            <a href="./cataract-center.html" class="block row justify-between">
+              노안/백내장
+            </a>
+            <a href="./oneday-retina.html" class="block row justify-between">
+              망막/황반변성
+            </a>
+            <a href="./dryeye.html" class="block row justify-between">
+              안구건조증
+            </a>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              녹내장
+            </a>
+            <a href="./child-center.html" class="block row justify-between">
+              소아안과
+            </a>
+            <a href="./cosmetic-ptosis.html" class="block row justify-between">
+              안성형
+            </a>
+            <a href="./onlinecouns.html" class="block row justify-between"
+              >예약/상담</a
+            >
+          </div>
+          <div class="menu2">
+            <div class="current block row justify-between">
+              의료진소개<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="./seyeintroduce.html" class="block row justify-between">
+              에스안과소개
+            </a>
+            <a href="./doctors.html" class="block row justify-between">
+              의료진소개
+            </a>
+            <a href="./contribution.html" class="block row justify-between">
+              사회공헌
+            </a>
+            <a href="./gallery.html" class="block row justify-between">
+              병원둘러보기</a
+            >
+            <a href="./location.html" class="block row justify-between">
+              찾아오시는길/진료시간
+            </a>
+            <a href="./notice.html" class="block row justify-between">
+              에스안과 소식
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="doctors light2">
+      <seciton class="section1">
+        <div class="row justify-between">
+          <div class="box t-center">
+            <!-- box 반복 -->
+            <div class="top">
+              <!-- 의료진 사진 -->
+              <img src="./img/doctors/doctor1.png" alt="" />
+            </div>
+            <div class="down">
+              <!-- 의료진 정보 -->
+              <div class="name">원장 김창국</div>
+              <div class="title">안과전문의</div>
+            </div>
+          </div>
+          <div class="box t-center">
+            <div class="top">
+              <img src="./img/doctors/doctor2.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="name">원장 김종현</div>
+              <div class="title">안과전문의</div>
+            </div>
+          </div>
+          <div class="box t-center">
+            <div class="top">
+              <img src="./img/doctors/doctor3.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="name">원장 안현석</div>
+              <div class="title">안과전문의</div>
+            </div>
+          </div>
+          <div class="box t-center">
+            <div class="top">
+              <img src="./img/doctors/doctor4.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="name">원장 박혜련</div>
+              <div class="title">안과전문의</div>
+            </div>
+          </div>
+          <div class="box t-center">
+            <div class="top">
+              <img src="./img/doctors/doctor5.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="name">원장 오은규</div>
+              <div class="title">안과전문의</div>
+            </div>
+          </div>
+          <div class="box t-center">
+            <div class="top">
+              <img src="./img/doctors/doctor6.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="name">원장 김진영</div>
+              <div class="title">안과전문의</div>
+            </div>
+          </div>
+          <div class="box t-center">
+            <div class="top">
+              <img src="./img/doctors/doctor7.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="name">원장 신선애</div>
+              <div class="title">안과전문의</div>
+            </div>
+          </div>
+          <div class="box t-center">
+            <div class="top">
+              <img src="./img/doctors/doctor8.png" alt="" />
+            </div>
+            <div class="down">
+              <div class="name">원장 황현지</div>
+              <div class="title">안과전문의</div>
+            </div>
+          </div>
+        </div>
+      </seciton>
+      <section class="section2">
+        <div class="box">
+          <div class="t-50 regular">Dr. <span class="bold">김창국</span></div>
+          <div class="list">
+            ·서울대학교 의과대학 졸업<br />
+            ·국립 암센터 안과 초대과장<br />
+            ·서울 아산 병원 안과 전문의<br />
+            ·미국백내장굴절수술학회 정회원<br />
+            ·한국백내장굴절수술학회 정회원<br />
+            ·서울아산병원 외래 정교수<br />
+            ·고려대학교 의과대학 외래 조교수<br />
+            ·대한안과학회 정회원
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="t-50 regular">Dr. <span class="bold">김종현</span></div>
+          <div class="list">
+            ·서울대학교 의과대학 졸업<br />
+            ·국립 암센터 안과 과장<br />
+            ·서울대학교병원 안과 전문의<br />
+            ·서울대학교병원 안과 임상강사<br />
+            ·서울대학교병원 의료경영 고위과정 수료<br />
+            ·한국백내장굴절수술학회 정회원<br />
+            ·미국안과학회 정회원
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="t-50 regular">Dr. <span class="bold">안현석</span></div>
+          <div class="list">
+            ·연세대학교 의과대학 졸업<br />
+            ·대한안과학회 정회원<br />
+            ·한국콘택트렌즈학회 정회원<br />
+            ·한국백내장굴절수술학회 정회원<br />
+            ·연세대학교 세브란스병원 안과 전문의<br />
+            ·연세대학교 세브란스병원 각막 임상강사<br />
+            ·유럽백내장굴절수술학회 정회원
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="t-50 regular">Dr. <span class="bold">박혜련</span></div>
+          <div class="list">
+            ·울산대학교 의과대학 졸업<br />
+            ·서울 아산 병원 안과 전문의<br />
+            ·관동대학교 의과대학 대우 조교수<br />
+            ·성애 병원 안과 과장<br />
+            ·한국콘택트렌즈학회 정회원<br />
+            ·한국백내장굴절수술학회 정회원<br />
+            ·대한안과학회 정회원
+          </div>
+        </div>
+        <div class="box">
+          <div class="t-50 regular">Dr. <span class="bold">오은규</span></div>
+          <div class="list">
+            ·서울대학교 의과대학 졸업<br />
+            ·서울대학교병원 안과 임상강사<br />
+            ·대한성형안과학회 정회원<br />
+            ·한국콘택트렌즈학회 정회원<br />
+            ·서울대학교병원 안과 전문의<br />
+            ·분당서울대학교병원 안과 조교수<br />
+            ·한국백내장굴절수술학회 정회원
+          </div>
+        </div>
+        <div class="box">
+          <div class="t-50 regular">Dr. <span class="bold">김진영</span></div>
+          <div class="list">
+            ·한림대학교 의과대학 의학사, 의학석사<br />
+            ·서울대학교 의과대학 안과학교실 망막전문의<br />
+            ·서울대학교병원 망막전임의<br />
+            ·전)인천광역시 의료원 안과 과장<br />
+            ·전)제주대학교병원 안과 과장<br />
+            ·대한안과학회 정회원 및 홍보위원 역임<br />
+            ·한국망막학회 정회원 및 부총무이사<br />
+            ·한국포도막학회 정회원 및 홍보간사
+          </div>
+        </div>
+        <div class="box">
+          <div class="t-50 regular">Dr. <span class="bold">신선애</span></div>
+          <div class="list">
+            ·원광대학교 의과대학 졸업<br />
+            ·서울대학교병원 안과 전문의<br />
+            ·서울대학교병원 안과 임상강사<br />
+            ·서울대학교병원 의료경영 고위과정 수료<br />
+            ·한국백내장굴절수술학회 정회원<br />
+            ·대한성형안과학회 정회원<br />
+            ·한국콘택트렌즈학회 정회원<br />
+            ·한국사시소아안과학회 정회원
+          </div>
+        </div>
+        <div class="box">
+          <div class="t-50 regular">Dr. <span class="bold">황현지</span></div>
+          <div class="list">
+            ·순천향대학교 의과대학 졸업<br />
+            ·영등포 김안과병원 전임의<br />
+            ·대한안과의사회 정회원<br />
+            ·한국백내장굴절수술학회 정회원<br />
+            ·미국백내장굴절수술학회 정회원<br />
+            ·유럽백내장굴절수술학회 정회원<br />
+            ·미국시기능연구학회 정회원
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="row justify-between">
+          <div class="left">
+            <div class="medium t-22">진료시간표</div>
+            <table class="regular">
+              <tr>
+                <td>시간</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>오전</td>
+                <td>라식진료</td>
+                <td></td>
+                <td></td>
+                <td>외래진료</td>
+                <td>라식진료</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>오후</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>야간진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <table class="regular">
+              <tr>
+                <td>시간</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>오전</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>오후</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td></td>
+                <td>진료</td>
+                <td>진료</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>야간진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <table class="regular">
+              <tr>
+                <td>시간</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>오전</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>오후</td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>야간진료</td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <table class="regular">
+              <tr>
+                <td>시간</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>오전</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>오후</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td></td>
+                <td>진료</td>
+                <td>진료</td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>야간진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+              </tr>
+            </table>
+            <table class="regular">
+              <tr>
+                <td>시간</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>오전</td>
+                <td></td>
+                <td>진료</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td></td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>오후</td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>야간진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <table class="regular">
+              <tr>
+                <td>시간</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>오전</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td>진료</td>
+                <td></td>
+                <td>진료</td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>오후</td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>야간진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <table class="regular">
+              <tr>
+                <td>시간</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>오전</td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>오후</td>
+                <td>진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>야간진료</td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+            <table class="regular">
+              <tr>
+                <td>시간</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+              <tr>
+                <td>오전</td>
+                <td>진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>오후</td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+                <td>진료</td>
+                <td>진료</td>
+                <td>진료</td>
+              </tr>
+              <tr>
+                <td>야간진료</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>진료</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+          <div class="right t-left">
+            <div class="medium t-22">안내사항</div>
+            <div class="t-18 thin">
+              진료일정이 조정되는 경우가 있으니<br />
+              <span class="regular">내원 전 전화문의주시기 바랍니다.</span>
+            </div>
+            <div class="buttons t-center regular">
+              <a href="#"><div class="button t-22 regualr">온라인예약</div></a>
+              <a href="#"><div class="button t-22 regualr">수술 후기</div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="footerimport"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./js/common.js"></script>

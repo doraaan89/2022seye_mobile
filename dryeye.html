@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/kkccss.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에스안과</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=040375a28286e08d1ba8b77ed913bf78"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#menuimport").load("./menubar.html");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footerimport").load("./footer.html");
+      });
+    </script>
+  </head>
+
+  <body id="kkc">
+    <div id="menuimport"></div>
+    <div class="common">
+      <div
+        class="banner disease"
+        style="background-image: url('./img/content-banner/dry.png')"
+      ></div>
+      <div class="breadcrumb row">
+        <a href="/"><img src="./img/common/bread_home.png" /></a>
+        <div class="row">
+          <div class="menu1">
+            <div class="current block row justify-between">
+              안구건조증<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="/seyeintroduce.html" class="block row justify-between">
+              에스안과
+            </a>
+            <a href="./vision-center.html" class="block row justify-between">
+              시력교정
+            </a>
+            <a href="./cataract-center.html" class="block row justify-between">
+              노안/백내장
+            </a>
+            <a href="./oneday-retina.html" class="block row justify-between">
+              망막/황반변성
+            </a>
+            <a href="./dryeye.html" class="block row justify-between">
+              안구건조증
+            </a>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              녹내장
+            </a>
+            <a href="./child-center.html" class="block row justify-between">
+              소아안과
+            </a>
+            <a href="./cosmetic-ptosis.html" class="block row justify-between">
+              안성형
+            </a>
+            <a href="./onlinecouns.html" class="block row justify-between"
+              >예약/상담</a
+            >
+          </div>
+          <div class="menu2">
+            <div class="current block row justify-between">
+              건조증치료<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="./dryeye.html" class="block row justify-between">
+              건조증치료
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="dryeye light2">
+        <section class="section1">
+          <div class="title">
+            <div class="bold">안구건조증</div>
+            <div>
+              <span class="bold"
+                >증상을 분석하고 정확한<br />
+                원인 진단</span
+              >을 통해 치료합니다.
+            </div>
+          </div>
+        </section>
+        <section class="section2">
+          <div class="t-65"><span class="bold">안구건조증</span>이란?</div>
+          <div class="t-30">
+            <span class="bold">방치하면 위험한 안구건조증 </span>적절한 치료가
+            중요합니다.
+          </div>
+          <div class="row justify-center">
+            <div class="left">
+              <img src="./img/dryeye/section2_img1.jpg" alt="" srcset="" />
+            </div>
+            <div class="right">
+              <div class="t-38 bold t-left">
+                현대인의 눈 건강을<br />
+                위협하고 있는 안과질환
+              </div>
+              <div class="right t-25 t-left">
+                안구건조증은 눈물이 부족하거나 눈물 구성성분의 균형이 깨져서<br />
+                눈물이 지나치게 증발하여 안구 표면이 손상되어 이물감, 건조함,<br />
+                시린 증상이 나타나는 질환입니다. 안구건조증이 증상이 심하면
+                각막에 상처와 혼탁이 발생할 수 있기 적절한 치료와 관리가<br />
+                이뤄져야 합니다.
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section3">
+          <div class="t-65">
+            안구건조증의 <span class="bold">대표적 증상</span>
+          </div>
+          <div class="table regular">
+            <table>
+              <tr>
+                <td>
+                  <img src="./img/dryeye/section3_img1.png" alt="" srcset="" />
+                  이물감이 느껴질때
+                </td>
+                <td>
+                  <img src="./img/dryeye/section3_img1.png" alt="" srcset="" />
+                  뿌옇게 보이는 시야
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./img/dryeye/section3_img1.png" alt="" srcset="" />
+                  잦은 안구 통증과 두통
+                </td>
+                <td>
+                  <img src="./img/dryeye/section3_img1.png" alt="" srcset="" />
+                  렌즈사용시 불편감
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./img/dryeye/section3_img1.png" alt="" srcset="" />
+                  안구 시림
+                </td>
+                <td>
+                  <img src="./img/dryeye/section3_img1.png" alt="" srcset="" />
+                  건조감, 뻑뻑함
+                </td>
+              </tr>
+            </table>
+            <div class="t-30 regular">
+              위와 같은 증상이 있다면 안과에서
+              <span class="bold">정확한 진단</span>과
+              <span class="bold">치료</span>를 받아야 합니다.
+            </div>
+            <a href="./dryeye.html">
+              <img
+                src="./img/dryeye/section2_img3.jpg"
+                alt=""
+                class="talk-button"
+            /></a>
+          </div>
+        </section>
+        <section class="section4">
+          <div class="t-65">
+            안구건조증의 <span class="bold">원인</span>은
+            <span class="bold">무엇일까?</span>
+          </div>
+          <div class="row justify-between light2">
+            <div class="box">
+              <img src="./img/dryeye/section4_img1.jpg" alt="" class="up" />
+              <div class="down t-25">장시간 스마트폰, PC등 사용</div>
+            </div>
+            <div class="box">
+              <img src="./img/dryeye/section4_img2.jpg" alt="" class="up" />
+              <div class="down t-25">노화</div>
+            </div>
+            <div class="box">
+              <img src="./img/dryeye/section4_img3.jpg" alt="" class="up" />
+              <div class="down t-25">스트레스, 수면부족</div>
+            </div>
+          </div>
+          <div class="row justify-between light2">
+            <div class="box">
+              <img src="./img/dryeye/section4_img4.jpg" alt="" class="up" />
+              <div class="down t-25">건조한 환경</div>
+            </div>
+            <div class="box">
+              <img src="./img/dryeye/section4_img5.jpg" alt="" class="up" />
+              <div class="down t-25">잘못된 렌즈착용</div>
+            </div>
+            <div class="box">
+              <img src="./img/dryeye/section4_img6.jpg" alt="" class="up" />
+              <div class="down t-25">특정약물 장기복용</div>
+            </div>
+          </div>
+        </section>
+        <section class="section5">
+          <div class="t-40 regular">안구건조증 가장 큰 원인</div>
+          <div class="t-65 bold">마이봄샘의 기능장애</div>
+          <div class="t-30">
+            우리 안구 표면에는 눈물막이 존재합니다. 눈물막은 점액층, 수분층,
+            기름층의 3가지 성분으로 이루어져 있는데<br />
+            기름성분의 분비가 원활하지 못하거나 눈물 성분의 균형이 깨지는 경우<br />
+            안구건조증이 발생하게 됩니다.
+          </div>
+          <div class="detail"></div>
+        </section>
+        <section class="section6">
+          <div class="t-65">
+            안구건조증의 <span class="bold">치료가 필요한사람</span>
+          </div>
+          <div class="t-30">
+            안구건조증은 현대인의 90%가 갖고 있는 질환이지만 생활습관 또는
+            자연스러운 노화 현상으로 인해<br />
+            발생하기도 합니다. 안구건조증이 심하다면 방치하기보단 근본적인
+            원인을 찾아 치료하고 꾸준히 관리하는 것이 중요합니다.
+          </div>
+          <div class="row justify-between regular">
+            <div>
+              <img src="./img/dryeye/section5_img.png" alt="" />
+              <div class="t-25">콘택트렌즈 사용</div>
+            </div>
+            <div>
+              <img src="./img/dryeye/section5_img3.png" alt="" />
+              <div class="t-25">장시간 IT기기 사용</div>
+            </div>
+            <div>
+              <img src="./img/dryeye/section5_img2.png" alt="" />
+              <div class="t-25">장시간 공부</div>
+            </div>
+            <div>
+              <img src="./img/dryeye/section5_img4.png" alt="" />
+              <div class="t-25">40대 이후</div>
+            </div>
+            <div>
+              <img
+                src="./img/dryeye/section5_img5.png"
+                style="padding-right: 20px"
+                alt=""
+              />
+              <div class="t-25">안구건조증</div>
+            </div>
+          </div>
+        </section>
+        <section class="section7">
+          <div class="t-65">
+            안산에스안과의 <span class="bold">근본적인 치료방법</span>
+          </div>
+          <div class="t-30">
+            안산에스안과는 눈물층 분석장비를 통해 안구건조증의 정확한 원인을
+            파악 후 근본적인 원인이 되는<br />
+            마이봄샘 기능이상을 치료하여 보다 효과적인 치료가 진행되고 있습니다.
+          </div>
+
+          <div class="row justify-between">
+            <div class="left">
+              <img src="./img/dryeye/section8_img1.jpg" alt="" />
+            </div>
+            <div class="right">
+              <div class="title">
+                <span class="bolder t-65"> 눈물층 분석장비 </span>
+                <span class="t-60 regular">K5M</span>
+              </div>
+              <div class="t-30">
+                건성안 관련 지표를 종합적으로 정보를 확인할 수 있는 <br />
+                <span class="bold">안구건조증 진단 특화 장비</span>입니다.
+              </div>
+              <div class="table regular">
+                <div class="row between">
+                  <div class="inbox">
+                    <img
+                      src="./img/dryeye/section7_img6.png"
+                      alt=""
+                      class="number"
+                    />
+                    <div class="t-40">눈물 분비 검사</div>
+                    <div class="t-25">Tear Menincus Height</div>
+                  </div>
+                  <div class="inbox">
+                    <img
+                      src="./img/dryeye/section7_img5.png"
+                      alt=""
+                      class="number"
+                    />
+                    <div class="t-40">눈물막 안정성 검사</div>
+                    <div
+                      class="t-25"
+                      style="font-size: 1.11em; letter-spacing: -1.5px"
+                    >
+                      Non-Invasive Keratograph Break-up Time
+                    </div>
+                  </div>
+                </div>
+                <div class="row between">
+                  <div class="inbox">
+                    <img
+                      src="./img/dryeye/section7_img4.png"
+                      alt=""
+                      class="number"
+                    />
+                    <div class="t-40">눈물막 지질층 두께 검사</div>
+                    <div class="t-25">Lipid Layer Examination</div>
+                  </div>
+                  <div class="inbox">
+                    <img
+                      src="./img/dryeye/section7_img3.png"
+                      alt=""
+                      class="number"
+                    />
+                    <div class="t-40">눈물막 점도 검사</div>
+                    <div class="t-25">Tear film Dynamic Examination</div>
+                  </div>
+                </div>
+                <div class="row between">
+                  <div class="inbox">
+                    <img
+                      src="./img/dryeye/section7_img2.png"
+                      alt=""
+                      class="number"
+                    />
+                    <div class="t-40">결막 충혈정도 검사</div>
+                    <div class="t-25">R-scan</div>
+                  </div>
+                  <div class="inbox">
+                    <img
+                      src="./img/dryeye/section7_img1.png"
+                      alt=""
+                      class="number"
+                    />
+                    <div class="t-40">마이봄선 검사</div>
+                    <div class="t-25">Meibo-scan</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section8">
+          <div class="row justify-between">
+            <div class="left">
+              <div class="title bold t-65">
+                아쿠아레이저 <span class="regular">M22</span>
+              </div>
+              <div class="t-30">
+                안구건조증의 근본적인 원인이 되는
+                <span class="bold">마이봄샘 기능을 회복</span>시키고, 건강한<br />
+                눈물막이 형성하도록 치료하며 피부 고민까지 동시에 해결하는
+                치료입니다.
+              </div>
+              <div class="table regular">
+                <table>
+                  <tr>
+                    <td>짧은 시술 시간</td>
+                    <td>눈주변 피부개선</td>
+                  </tr>
+                  <tr>
+                    <td>적은 통증</td>
+                    <td>FDA승인 안전성</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./img/dryeye/section8_img1.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="section9">
+          <div class="row justify-between">
+            <div class="left">
+              <img src="./img/dryeye/section8_img1.png" alt="" />
+              <div class="title bold">BEFORE</div>
+            </div>
+            <div class="right">
+              <img src="./img/dryeye/section8_img1.png" alt="" />
+              <div class="title bold">AFTER</div>
+            </div>
+          </div>
+        </section>
+        <div id="footerimport"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./js/common.js"></script>

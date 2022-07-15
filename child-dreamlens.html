@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/kkccss.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>에스안과</title>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=040375a28286e08d1ba8b77ed913bf78"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#menuimport").load("./menubar.html");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        $("#footerimport").load("./footer.html");
+      });
+    </script>
+  </head>
+
+  <body id="kkc">
+    <div id="menuimport"></div>
+    <div class="common">
+      <div
+        class="banner disease"
+        style="background-image: url('./img/content-banner/child.png ')"
+      ></div>
+      <div class="breadcrumb row">
+        <a href="/"><img src="./img/common/bread_home.png" /></a>
+        <div class="row">
+          <div class="menu1">
+            <div class="current block row justify-between">
+              소아안과<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="/seyeintroduce.html" class="block row justify-between">
+              에스안과
+            </a>
+            <a href="./vision-center.html" class="block row justify-between">
+              시력교정
+            </a>
+            <a href="./cataract-center.html" class="block row justify-between">
+              노안/백내장
+            </a>
+            <a href="./oneday-retina.html" class="block row justify-between">
+              망막/황반변성
+            </a>
+            <a href="./dryeye.html" class="block row justify-between">
+              안구건조증
+            </a>
+            <a href="./glaucoma-1day.html" class="block row justify-between">
+              녹내장
+            </a>
+            <a href="./child-center.html" class="block row justify-between">
+              소아안과
+            </a>
+            <a href="./cosmetic-ptosis.html" class="block row justify-between">
+              안성형
+            </a>
+            <a href="./onlinecouns.html" class="block row justify-between"
+              >예약/상담</a
+            >
+          </div>
+          <div class="menu2">
+            <div class="current block row justify-between">
+              드림렌즈<img src="./img/common/bread_btn.png" alt="" />
+            </div>
+            <a href="./child-center.html" class="block row justify-between">
+              소아클리닉
+            </a>
+            <a href="./child-atropine.html" class="block row justify-between">
+              근시안약치료
+            </a>
+            <a href="./child-dreamlens.html" class="block row justify-between">
+              드림렌즈
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dreamlens light2">
+      <section class="section1 regular">
+        <div class="title">
+          <div class="bold">드림렌즈</div>
+          <div>
+            성장기 어린이의 눈관리는<br />
+            <span class="bold">평생 시력에 매우 중요합니다</span>
+          </div>
+        </div>
+      </section>
+      <section class="section2 t-center">
+        <div class="t-65 bold">올바른 드림렌즈</div>
+        <div class="t-30 bold">평생의 시력을 좌우하는 성장기 눈관리</div>
+        <div class="row justify-between">
+          <div class="left">
+            <img src="./img/dreamlens/section2_img1.png" alt="" />
+          </div>
+          <div class="right">
+            <div class="t-38 bold">
+              자는 동안 시력을 교정해주는 드림렌즈<br />
+              수술 없이도 시력을 교정할 수 있습니다.
+            </div>
+
+            <div class="t-25">
+              드림렌즈는 특수하게 만들어진 렌즈로
+              <span class="bold"
+                >볼록한 각막의 중심부위를<br />
+                편평하게 만들어 교정</span
+              >해주는 역할을 함으로써
+              <span class="bold"
+                >밤에 렌즈를 착용하고<br />
+                자면 다음날 시력이 교정</span
+              >되는 효과를 줍니다.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3 t-center">
+        <div class="t-65 thin">
+          밤사이 교정되는 <span class="bold">드림렌즈의 원리</span>
+        </div>
+        <div class="t-25">
+          드림렌즈는
+          <span class="bold">자는 사이에 착용하는 동안 각막 형태에 편평</span
+          >하게 만들어
+          <span class="bold"
+            >근시와 <br />
+            난시의 진행을 억제</span
+          >시키고, 낮동안
+          <span class="bold">일시적으로 시력을 교정합니다.</span>
+        </div>
+        <div class="row justify-between">
+          <div class="box">
+            <div class="up">
+              <img src="./img/dreamlens/section3_img1.png" alt="" />
+            </div>
+            <div class="down t-25">
+              시력이 저하된 볼록한<br />
+              각막의 상태입니다.
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <img src="./img/dreamlens/section3_img2.png" alt="" />
+            </div>
+            <div class="down t-25">
+              자기 전에 드림 렌즈를<br />
+              착용합니다.
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <img src="./img/dreamlens/section3_img3.png" alt="" />
+            </div>
+            <div class="down t-25">
+              밤사이 렌즈가 볼록해진 각막<br />
+              중심을 편평하게 눌러줍니다.
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <img src="./img/dreamlens/section3_img4.png" alt="" />
+            </div>
+            <div class="down t-25">
+              볼록했던 각막이 편평해져<br />
+              낮동안 시력이 좋아집니다.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section4 t-center">
+        <div class="t-65 bold">드림렌즈의 장점</div>
+        <img src="./img/dreamlens/section4_img1.png" alt="" />
+        <div class="row justify-between">
+          <div class="box">
+            <div class="circle medium">01</div>
+            <div class="t-25 regular">연령에 제한이 없음</div>
+            <div class="t-20">
+              사용법이 쉽고 간단하여<br />
+              연령이 제한 없이 착용
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle medium">02</div>
+            <div class="t-25 regular">성장기 근시 억제 기능</div>
+            <div class="t-20">
+              성장기 어린이의 근시와 <br />
+              난시 진행 억제 효능
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle medium">03</div>
+            <div class="t-25 regular">비수술적인 교정</div>
+            <div class="t-20">
+              수술없어 각막의 손상이<br />
+              없이 시력교정 효과
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle medium">04</div>
+            <div class="t-25 regular">안정성</div>
+            <div class="t-20">
+              미국 FDA의 안전성 입증 <br />
+              렌즈 착용 중단 시 원상복귀
+            </div>
+          </div>
+          <div class="box">
+            <div class="circle medium">05</div>
+            <div class="t-25 regular">높은 산소 투과율</div>
+            <div class="t-20">
+              타 렌즈보다 산소 투과율이 <br />
+              높으며 쉬운 적응력과 편안함
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section5 t-center">
+        <div class="t-65">
+          드림렌즈가 <span class="bold">필요한 대상자</span>
+        </div>
+
+        <div class="row justify-between">
+          <div class="box">
+            <div class="up">
+              <div class="t-15">CHECK01</div>
+              <div class="t-25">
+                <span class="bold">근시가 시작</span>되고<br />
+                있는 <span class="bold">성장기 어린이</span>
+              </div>
+            </div>
+            <div class="down">
+              <img src="./img/dreamlens/section5_img1.png" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <div class="t-15">CHECK02</div>
+              <div class="t-25">
+                <span class="bold">부모님</span>의 <br />
+                <span class="bold">시력이 나쁜</span> 경우
+              </div>
+            </div>
+            <div class="down">
+              <img src="./img/dreamlens/section5_img2.png" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <div class="t-15">CHECK03</div>
+              <div class="t-25">
+                <span class="bold">안경 착용</span>이 <br />
+                <span class="bold">불편</span>한 경우
+              </div>
+            </div>
+            <div class="down">
+              <img src="./img/dreamlens/section5_img3.png" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <div class="t-15">CHECK04</div>
+              <div class="t-25">
+                <span class="bold"
+                  >시력 교정 <br />
+                  수술</span
+                >이 <span class="bold">두려운</span> 성인
+              </div>
+            </div>
+            <div class="down">
+              <img src="./img/dreamlens/section5_img4.png" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <div class="t-15">CHECK05</div>
+              <div class="t-25">
+                <span class="bold"
+                  >콘택트렌즈 <br />
+                  착용</span
+                >이 <span class="bold">불편</span>한 경우
+              </div>
+            </div>
+            <div class="down">
+              <img src="./img/dreamlens/section5_img5.png" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="up">
+              <div class="t-15">CHECK06</div>
+              <div class="t-25">
+                <span class="bold"
+                  >안경을 착용할 수<br />
+                  없는</span
+                >
+                특수 종사자
+              </div>
+            </div>
+            <div class="down">
+              <img src="./img/dreamlens/section5_img6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section6 t-center">
+        <div class="t-65 thin">
+          드림렌즈 <span class="bold">정밀검사 과정</span>
+        </div>
+        <div class="t-25 thin l1">
+          드림렌즈는 1:1 개인 맞춤 렌즈이며 자신에게 맞는 렌즈를 처방받는 것이
+          <br />꼼꼼한 처방과 세심한 사후 관리를 통해 관리하는 것이 중요합니다.
+        </div>
+        <img src="./img/dreamlens/section6_img1.png" alt="" />
+        <div class="t-25 thin l2">
+          환자에게 적합한 곡률의 렌즈를 여러개를 시험 착용 후 진료실에서
+          <span class="bold"
+            >안과전문의와 <br />
+            충분한 상담을 통해 최종 도수를 결정</span
+          >하게 되며 환자가 올바르게 렌즈를 사용할 수 있도록 <br /><span
+            class="bold"
+            >렌즈 관리 방법을 교육하여 안전하게 사용</span
+          >할 수 있도록 합니다.
+        </div>
+      </section>
+      <section class="section7 t-center">
+        <div class="t-65 bold">에스안과 드림렌즈는 특별합니다</div>
+        <div class="t-25 thin">
+          드림렌즈는 <span class="bold">1:1 개인 맞춤 </span>이며 자신에게 맞는
+          렌즈를 처방받는것이 중요하며<br />
+          <span class="bold">꼼꼼한 처방</span>과
+          <span class="bold">세심한 사후 관리</span>를 통해 관리하는 것이
+          중요합니다.
+        </div>
+        <div class="row justify-between t-center bold">
+          <div class="box1">다양한 검사 장비 보유</div>
+          <div class="box2">
+            착용부터 관리까지<br />
+            체계적인 시스템
+          </div>
+          <div class="box3">
+            가장 적합한 렌즈<br />
+            선택 가능
+          </div>
+          <div class="box4">
+            드림렌즈 체험 혜택으로<br />
+            렌즈 적용 및 최종<br />
+            사용 결정
+          </div>
+        </div>
+      </section>
+      <section class="section8 t-center">
+        <div class="t-65 bold">드림렌즈 착용 및 제거 방법</div>
+        <div style="margin: 0 auto">
+          <iframe
+            width="1477"
+            height="925"
+            src="https://www.youtube.com/embed/hGYmieIR87g"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="common">
+        <div class="child1">
+          <img src="./img/common/child_logo.png" alt="" />
+          <div class="t-65">
+            소아 안과검진은 <span class="bold">체계적인 에스안과</span>
+          </div>
+          <div class="t-25">
+            에스안과 소아안과 클리닉은
+            <span class="bold">아이들의 연령에 따른 체계적인 검사</span>를 통해
+            <span class="bold">정확한 치료</span>를 진행하고 있으며 <br /><span
+              class="bold"
+              >전문 검진 장비를 보유함</span
+            >으로써 보다 체계적으로 안과검사를 진행하고 있습니다.
+          </div>
+        </div>
+        <div class="child2">
+          <div class="wrapper">
+            <div class="row t-25">
+              <div class="box">
+                <span class="bold">안전</span>을
+                <span class="bold">최우선</span>으로<br />여기는 병원
+              </div>
+              <div class="box">
+                <span class="bold">아이</span>를 위한<br />
+                <span class="bold">평생관리</span> 시스템
+              </div>
+              <div class="box">
+                <span class="bold">최신 지식</span>과<br />
+                최첨단 <span class="bold">장비</span>
+              </div>
+              <div class="box">
+                <span class="bold">체계적인</span> 수술<br />
+                진료 <span class="bold">시스템</span>
+              </div>
+            </div>
+            <div class="t-35">
+              에스안과는 아이의 미래를 위해
+              <span class="bold"
+                >항상 최고의것을<br />
+                추구할 것을 약속</span
+              >합니다.
+            </div>
+          </div>
+        </div>
+        <div class="vision-qna t-center">
+          <div
+            class="t-55 bold"
+            style="padding-top: 187px; padding-bottom: 187px"
+          >
+            드림렌즈 관리 Q&A
+          </div>
+          <div class="table regular t-left">
+            <div class="tab">
+              <div class="q-mark"></div>
+              <span class="t-20">렌즈 착용 시 주의사항은 어떻게 되나요?</span>
+              <div class="btn"></div>
+            </div>
+            <div class="content t-25 t-left content1">
+              - 손톱을 단정히 깎아 렌즈나 눈이 손상되지 않도록 한다.<br />
+              - 렌즈를 빼거나 착용하기 전에는 반드시 손을 깨끗이 씻는다.<br />
+              - 렌즈를 착용한 직후, 또는 렌즈를 제거하기 전에 습윤제 또는
+              인공누액을 점안하여 렌즈의 움직임을 자연스럽게 한 뒤 빼주는 것이
+              좋다.<br />
+              - 렌즈를 착용하기 전에 이상 유무를 반드시 확인한다. <br />
+              - 초기 이물감을 줄이기 위해 미리 렌즈를 착용하고 눈을
+              깜빡여준다.<br />
+              - 렌즈를 끼고 잘때는 되도록 반듯한 자세를 취한다. <br />
+              - 렌즈가 빠지지 않도록 지나치게 힘주어 눈을 비비지 않는다.
+            </div>
+            <div class="tab">
+              <div class="q-mark"></div>
+              <span class="t-20">드림렌즈 세척방법은?</span>
+              <div class="btn"></div>
+            </div>
+            <div class="content t-25 t-left content2">
+              - 렌즈를 세척하기 전에는 반드시 손을 깨끗이 씻는다.<br />
+              - 아침에 렌즈를 제거한 직후 손바닥 위에 놓고 드림렌즈 클리너 또는
+              세척 성분이 있는 보존액으로 가볍게 문질러 닦아준다.<br />
+              - 세척이 마무리 된 드림렌즈는 보존 용액에 담아 보관한다.<br />
+              - 클리너 세척과 함께 더욱 깨끗한 세척을 위해 한 달에 1~2회 정도
+              단백질 제거를 해 주는 것이 좋다. <br />
+            </div>
+            <div class="tab">
+              <div class="q-mark"></div>
+              <span class="t-20"> 드림렌즈 사용 시 주의사항?</span>
+              <div class="btn"></div>
+            </div>
+            <div class="content t-25 t-left content3">
+              - 착용 초기에는 가려울 수 있는데 이때 절대 비비지 말고 살짝 눌러
+              준다.<br />
+              - 취침 시 8시간 이상 착용을 원칙으로 한다.<br />
+              - 렌즈의 좌우가 바뀌지 않도록 오른쪽 렌즈부터 빼거나 끼는 습관을
+              만든다.<br />
+              - 렌즈를 낀 채로 안약을 사용할 수 없으며, 만일 사용한 경우 2~3시간
+              후 렌즈를 재 착용한다.<br />
+              - 렌즈를 뺀 후 세척액으로 닦고 식염수(수돗물)로 헹군 후 소독을
+              위해 보존액에 최소 4시간 이상 담가 둡니다.<br />
+              - 소독, 보존이 끝난 후 렌즈를 헹구지 말고 그대로 착용한다. 만약
+              렌즈에 이물질이 남아 있다면 보존액으로 헹군 후 착용한다.<br />
+              - 착용 후나 착용 중에 통증, 충혈, 눈부심, 눈곱 등의 증상이 있을
+              때는 착용을 중단하고 안과의사의 진찰을 받는다.<br />
+              - 식염수는 세균 번식이 빨라 개봉 후 되도록 짧은 시간 내 사용해야
+              한다.<br />
+              - 뜨겁거나 너무 차가운 물로 세척하는 것을 피하고, 렌즈를 삶는
+              행동은 금한다.<br />
+              - 전문의에게 지속적으로 눈과 렌즈 상태를 확인한다.
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="footerimport" style="padding-top: 150px"></div>
+    </div>
+  </body>
+</html>
+
+<script src="./js/common.js"></script>
