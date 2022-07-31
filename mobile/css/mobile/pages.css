@@ -2,25 +2,6 @@ strong {
   font-weight: 700;
 }
 
-.btn {
-  max-width: 120px;
-  padding: 10px 16px;
-  box-sizing: border-box;
-  border-radius: 20px;
-  background-color: #ddd;
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-}
-
-.btn.primary {
-  background-color: #aa1a20;
-}
-
-.btn.secondary {
-  background-color: #7c0000;
-}
-
 .title-area {
   position: relative;
 }
@@ -49,10 +30,6 @@ strong {
   width: 50%;
 }
 
-/* .menu-area > li:last-child > a {
-  border-left: none;
-} */
-
 .menu-area li a {
   display: flex;
   justify-content: space-between;
@@ -78,6 +55,7 @@ strong {
   position: absolute;
   width: 100%;
   background-color: #fff;
+  z-index: 1;
 }
 
 .menu-area .sub-menu li {
@@ -326,11 +304,12 @@ strong {
   display: block;
 }
 
-.swiper-pagination-bullet-active {
+.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-pagination-bullet-active {
   color: #fff;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-button-next,
+.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-button-prev {
   top: 31%;
   margin-top: -15px;
   z-index: 5;
@@ -340,11 +319,230 @@ strong {
   background-color: rgba(51, 51, 51, .2);
 }
 
-.swiper-button-next {
+.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-button-next {
   right: 3px;
   background-image: url('../../images/pages/swiper_next.png');
 }
-.swiper-button-prev {
+.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-button-prev {
   left: 3px;
   background-image: url('../../images/pages/swiper_prev.png');
+}
+
+/* mobile_1day-glaucoma */
+.intro-area {
+  position: relative;
+  margin-top: 38px;
+}
+
+.intro-area .txt-wrap {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.intro-area .txt-wrap .title {
+  font-size: 20px;
+  line-height: 1.38;
+}
+
+.intro-area .txt-wrap .txt {
+  margin-top: 22px;
+  font-size: 12px;
+}
+
+section.glaucoma {
+  padding: 36px 0;
+  text-align: center;
+}
+
+section.glaucoma .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+section.glaucoma .img-area {
+  margin-top: 30px;
+  padding: 0 50px;
+}
+
+section.glaucoma .title.second {
+  margin-top: 32px;
+  line-height: 1.46;
+}
+
+section.glaucoma .txt {
+  margin-top: 42px;
+  font-size: 14px;
+  line-height: 1.67;
+}
+
+section.glaucoma-cause {
+  padding: 36px 24px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+section.glaucoma-cause .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+section.glaucoma-cause .cause-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+section.glaucoma-cause .cause-list li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  padding: 4px 14px;
+  background-color: #fff;
+}
+
+section.glaucoma-cause .cause-list li + li {
+  margin-top: 10px;
+}
+
+section.glaucoma-cause .cause-list li img {
+  width: 11px;
+  height: 9px;
+}
+
+section.glaucoma-cause .cause-list li .txt {
+  position: relative;
+  margin-left: 30px;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+section.glaucoma-cause .cause-list li .txt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -18px;
+  width: 1px;
+  height: 35px;
+  background-color: #cdcdcd;
+}
+
+section.glaucoma-test .swiper-area {
+  margin-top: 40px;
+}
+
+
+section.glaucoma-test .swiper-area .img-area {
+  border: 1px solid #f3f3f3;
+}
+
+section.glaucoma-test .swiper-area .text-area {
+  height: 30px;
+  border: 1px solid #f3f3f3;
+}
+
+.article.glaucoma-equip .text {
+  margin-top: 30px;
+}
+
+.article.glaucoma-equip .list-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  gap: 10px;
+}
+
+.article.glaucoma-equip .list-area li {
+  width: calc((100% - 10px) / 2);
+  border: 1px solid #f7f7f7;
+  box-sizing: border-box;
+}
+
+.article.glaucoma-equip .list-area .text-area {
+  padding: 10px;
+}
+
+.article.glaucoma-equip .list-area .text-area .title {
+  font-weight: bold;
+}
+
+.article.glaucoma-equip .list-area .text-area .content {
+  margin-top: 10px;
+}
+
+.glaucoma-banner-area {
+  position: relative;
+}
+
+.glaucoma-banner-area .text-area {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.glaucoma-banner-area .text-area .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.glaucoma-banner-area .text-area .content {
+  margin-top: 14px;
+  font-size: 15px;
+}
+
+.consult-phone .form-phone {
+  margin-top: 27px;
+}
+
+.consult-phone .form-phone select {
+  width: 100%;
+  padding: 10px;
+}
+
+.consult-phone .form-phone .input-phone {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.consult-phone .form-phone .input-phone .dial {
+  width: calc(30% - 20px);
+}
+
+.consult-phone .form-phone .input-phone .number {
+  width: 70%;
+}
+
+.consult-phone .form-phone textarea {
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.consult-phone .form-phone .noti {
+  width: 100%;
+  padding: 10px;
+  font-size: 8px;
+  background-color: #fff;
+  border: 1px solid #111;
+  box-sizing: border-box;
+}
+
+.consult-phone .form-phone .check-area {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  
+}
+
+.consult-phone .form-phone .btn {
+  max-width: none;
+  width: 100%;
+  margin-top: 10px;
 }

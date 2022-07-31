@@ -187,9 +187,70 @@
     <!-- //sidebar -->
     <!-- content -->
     <div id="content">
-      <!-- content area :s -->
-      
-      <!-- content area :e -->
+    <!-- content area :s -->
+    <h4 class="title-area">
+      <img src="./images/pages/seyeintro_top.png" alt="" />
+      <span class="title">에스안과 <strong>소개</strong></span>
+    </h4>
+    <ul class="menu-area">
+        <li>
+          <a href="javascript:void(0)" class="selected">
+            에스안과
+            <img src="./images/accordion_btn.png" alt="" />
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="javascript:void(0)">
+                에스안과
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                에스안과
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                에스안과
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                에스안과
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="javascript:void(0)" class="selected">
+            의료진소개
+            <img src="./images/accordion_btn.png" alt="" />
+          </a>
+          <ul class="sub-menu">
+            <li>
+              <a href="javascript:void(0)">
+                의료진소개
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                의료진소개
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                의료진소개
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">
+                의료진소개
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    <!-- content area :e -->
     </div>
     <!-- //content -->
     <!-- footer -->
@@ -244,5 +305,17 @@
         </ul>
     </div>
     <!-- //quick menu -->
+    <script>
+        var selectedMenu = '.menu-area .selected';
+        $(selectedMenu).click(function() {
+            if (!$(this).hasClass('open')) {
+            $(this).siblings('.sub-menu').slideDown(500);
+            $(this).addClass('open');
+            } else {
+            $(this).siblings('.sub-menu').slideUp(500);
+            $(this).removeClass('open');
+            }
+        })
+    </script>
 </body>
 </html>
