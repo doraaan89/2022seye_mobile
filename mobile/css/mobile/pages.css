@@ -445,6 +445,7 @@ section.glaucoma-test .swiper-area .text-area {
 
 .box-check {
   display: flex;
+  align-items: center;
   max-width: 260px;
   margin-left: auto;
   margin-right: auto;

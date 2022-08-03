@@ -12,7 +12,19 @@ img {
 .icon {
   display: inline-block;
   width: 20px;
-  height: 20px !important;
+}
+
+.icon.logo {
+  width: 72px;
+}
+
+.icon.i36 {
+  width: 36px;
+}
+
+.icon.i10 {
+  width: 10px;
+  height: 10px;
 }
 
 .icon-num {
@@ -96,6 +108,7 @@ img {
 .btn {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   appearance: none;
   -webkit-appearance: none;
   padding: 10px 16px;
@@ -105,6 +118,12 @@ img {
   background-color: #ddd;
   font-size: 14px;
   color: #fff;
+}
+
+.btn .icon {
+  width: 10px;
+  height: 14px;
+  margin-left: 8px;
 }
 
 .btn.primary {
@@ -470,9 +489,21 @@ strong,
 .accordion-area .accordion-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
+  padding: 16px 8px;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-area .accordion-header .icon {
+  width: 11px;
+  height: 14px;
+}
+
+.accordion-area .accordion-header > .text {
+  margin-right: auto;
+  margin-left: 16px;
 }
 
 .accordion-area .accordion-body {
