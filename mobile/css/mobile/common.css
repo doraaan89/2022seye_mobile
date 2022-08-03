@@ -95,6 +95,7 @@ img {
 }
 .btn {
   display: inline-flex;
+  justify-content: center;
   appearance: none;
   -webkit-appearance: none;
   padding: 10px 16px;
@@ -104,7 +105,6 @@ img {
   background-color: #ddd;
   font-size: 14px;
   color: #fff;
-  text-align: center;
 }
 
 .btn.primary {
@@ -122,6 +122,18 @@ img {
 /* swiper */
 .swiper-area {
   overflow: hidden;
+}
+
+.swiper-thumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 26px;
+  gap: 8px;
+}
+
+.swiper-thumb .empty {
+  flex-basis: calc((100% - 16px) / 3);
+  height: 70px;
 }
 
 /* text */
@@ -325,6 +337,11 @@ strong,
   top: 50%;
   right: 40px;
   transform: translateY(-50%);
+}
+
+.banner-area .text-wrap.right {
+  right: auto;
+  left: 40px;
 }
 
 .banner-area .text-wrap .text {
