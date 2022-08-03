@@ -1,71 +1,3 @@
-strong {
-  font-weight: 700;
-}
-
-.title-area {
-  position: relative;
-}
-
-.title-area img {
-  display: block;
-}
-
-.title-area .title {
-  position: absolute;
-  top: 50%;
-  right: 40px;
-  transform: translateY(-50%);
-  font-size: 16px;
-}
-
-.menu-area {
-  position: relative;
-  display: flex;
-  margin-top: 12px;
-  padding: 0 12px;
-}
-
-.menu-area li {
-  position: relative;
-  width: 50%;
-}
-
-.menu-area li a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #a8a8a8;
-  padding: 16px;
-  padding-right: 10px;
-  box-sizing: border-box;
-  font-size: 12px;
-}
-
-.menu-area li a:hover {
-  background-color: #f8f8f8;
-}
-
-.menu-area li a img {
-  width: 9px;
-  height: 6px;
-}
-
-.menu-area .sub-menu {
-  display: none;
-  position: absolute;
-  width: 100%;
-  background-color: #fff;
-  z-index: 1;
-}
-
-.menu-area .sub-menu li {
-  width: 100%;
-}
-
-.menu-area .sub-menu li a {
-  border-top: none;
-}
-
 .introduce {
   padding: 40px 24px 30px;
 }
@@ -496,53 +428,29 @@ section.glaucoma-test .swiper-area .text-area {
   font-size: 15px;
 }
 
-.consult-phone .form-phone {
-  margin-top: 27px;
+/* 노안과백내장 */
+.check-list-area {
+  padding: 13px;
+  background-color: #e7e7e7;
 }
 
-.consult-phone .form-phone select {
-  width: 100%;
-  padding: 10px;
-}
-
-.consult-phone .form-phone .input-phone {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 6px;
-}
-
-.consult-phone .form-phone .input-phone .dial {
-  width: calc(30% - 20px);
-}
-
-.consult-phone .form-phone .input-phone .number {
-  width: 70%;
-}
-
-.consult-phone .form-phone textarea {
-  margin-top: 10px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.consult-phone .form-phone .noti {
-  width: 100%;
-  padding: 10px;
-  font-size: 8px;
+.check-list-area .check-list {
+  padding: 23px 10px;
   background-color: #fff;
-  border: 1px solid #111;
-  box-sizing: border-box;
 }
 
-.consult-phone .form-phone .check-area {
+.check-list-area .check-list li {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 10px;
-  
 }
 
-.consult-phone .form-phone .btn {
-  max-width: none;
-  width: 100%;
-  margin-top: 10px;
+.box-check {
+  display: flex;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.box-check .text {
+  flex: 1;
+  margin-left: 16px;
 }
