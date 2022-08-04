@@ -11,4 +11,11 @@ $(function() {
       $(this).removeClass('open');
     }
   });
+
+  // tab
+  var tabBtn = '.btn-wrap-tab .btn';
+  $(tabBtn).click(function() {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  })
 })
