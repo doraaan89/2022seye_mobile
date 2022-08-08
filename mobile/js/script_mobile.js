@@ -18,4 +18,16 @@ $(function() {
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
   })
+
+  // swiper
+  var swiper = new Swiper('.swiper-area', {
+    slidesPerView: 2,
+    centeredSlides: true,
+    spaceBetween: 16,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  })
 })
