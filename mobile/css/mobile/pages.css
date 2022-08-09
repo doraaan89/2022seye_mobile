@@ -576,3 +576,49 @@ section.glaucoma-test .swiper-area .text-area {
   font-size: 8px;
   margin-left: 5px;
 }
+
+.box-complex {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color)
+}
+
+.box-complex > img {
+  width: 40%;
+} 
+
+.box-complex > .text-wrap {
+  width: 60%;
+  padding: 22px 12px;
+  box-sizing: border-box;
+}
+
+.box-complex > .text-wrap .title {
+  font-size: 10px;
+}
+
+.box-complex > .text-wrap .text {
+  font-size: 10px;
+}
+
+.box-complex > .text {
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #051c2e;
+  color: #fff;
+}
+
+.box-complex.type2 {
+  border: none;
+}
+
+.box-complex.type2 > .text-wrap {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+}
+
+.box-complex.type2 > .text-wrap .text .highlight {
+  background-color: #f7f7f7;
+}
+
