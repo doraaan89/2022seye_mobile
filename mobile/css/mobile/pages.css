@@ -622,3 +622,26 @@ section.glaucoma-test .swiper-area .text-area {
   background-color: #f7f7f7;
 }
 
+/* 백내장 수술 */
+.cover-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;;
+  gap: 8px 10px;
+  transform: translateY(-10%);
+}
+
+.cover-wrap .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc((100% - 10px) / 2);
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  background-color: #fff;
+}
+
+.cover-wrap .item img {
+  width: 34px;
+}

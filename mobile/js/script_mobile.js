@@ -19,6 +19,13 @@ $(function() {
     $(this).siblings().removeClass('active');
   })
 
+  // tab-header
+  var tabBtn = '.btn-wrap-tab .header';
+  $(tabBtn).click(function() {
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+  })
+
   // swiper
   var swiper = new Swiper('.swiper-area', {
     slidesPerView: 2,

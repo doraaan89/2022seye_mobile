@@ -66,8 +66,8 @@ img {
   border: 1px solid #c3c3c3;
 }
 
-.ph21 {
-  padding: 0 21px;
+.pd21 {
+  padding: 21px;
 }
 
 .pt0 { padding-top: 0; }
@@ -110,6 +110,13 @@ img {
   padding: 38px 21px 25px;
 }
 
+.inner {
+  padding: 0 21px;
+}
+
+.inner.surrounded {
+  padding: 21px;
+}
 /* btn */
 .btn-wrap .btn {
   max-width: 145px;
@@ -122,11 +129,16 @@ img {
   gap: 4px
 }
 
+
 .btn-wrap-tab .btn {
   display: block;
   max-width: 120px;
   flex-basis: calc((100% - 4px) / 2);
   border-radius: 0;
+}
+
+.btn-wrap-tab.col3 .btn {
+  flex-basis: calc((100% - 8px) / 3);
 }
 
 .btn-wrap-tab.full .btn {
@@ -139,6 +151,19 @@ img {
   border: 1px solid var(--border-color);
   background-color: #fff;
   color: #111;
+}
+
+.btn-wrap-tab .header {
+  display: block;
+  flex-basis: calc((100% - 4px) / 2);
+  padding: 10px;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+}
+.btn-wrap-tab .header.active {
+  border-bottom: 4px solid var(--border-color);
+  font-weight: 700;
 }
 
 .btn-wrap-tab .btn.type1.active,
@@ -245,6 +270,22 @@ img {
 
 .swiper-area .swiper-notification {
   display: block;
+}
+
+.swiper-area .swiper-button-prev {
+  width: 22px;
+  height: 30px;
+  background-image: url(../../images/pages/icon_swiper-prev.png);
+  background-color: rgba(0, 0, 0, .2);
+  background-size: 12px 22px;
+}
+
+.swiper-area .swiper-button-next {
+  width: 22px;
+  height: 30px;
+  background-image: url(../../images/pages/icon_swiper-next.png);
+  background-color: rgba(0, 0, 0, .2);
+  background-size: 12px 22px;
 }
 
 /* text */
@@ -473,6 +514,12 @@ strong,
   left: 40px;
 }
 
+.banner-area .text-wrap.center {
+  width: 100%;
+  left: auto;
+  right: auto;
+}
+
 .banner-area .text-wrap .text {
   margin-top: 20px;
   font-size: 12px;
@@ -498,6 +545,7 @@ strong,
 .card-wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -509,8 +557,8 @@ strong,
   width: calc((100% - 16px) / 2);
 }
 
-.card-wrap.tri-col .card {
-  width: calc((100% - 16px) / 3);
+.card-wrap.col3 .card {
+  width: calc((100% - 32px) / 3);
 }
 
 .card {
@@ -535,7 +583,7 @@ strong,
   flex-basis: 120px;
 }
 
-.box-wrap.tri-col .box-line {
+.box-wrap.col3 .box-line {
   width: calc((100% - 20px) / 3);
 }
 
@@ -616,8 +664,19 @@ strong,
   gap: 6px;
 }
 
-.img-wrap img {
+.img-wrap.col3 {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px 4px;
+}
+
+.img-wrap > img,
+.img-wrap > .img-item {
   width: calc((100% - 6px) / 2);
+}
+
+.img-wrap.col3 .img-item {
+  width: calc((100% - 8px) / 3);
 }
 
 /* 전화상담신청 */
