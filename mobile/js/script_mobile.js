@@ -27,7 +27,7 @@ $(function() {
   })
 
   // swiper
-  var swiper = new Swiper('.swiper-area', {
+  var swiper = new Swiper('.swiper-area.default', {
     slidesPerView: 2,
     centeredSlides: true,
     spaceBetween: 16,
@@ -36,5 +36,12 @@ $(function() {
       el: '.swiper-pagination',
       type: 'bullets',
     },
+  })
+
+  // swiper
+  var swiper = new Swiper('.swiper-area.tab', {
+    slidesPerView: 4,
+    spaceBetween: 16,
+    freeMode: 'true',
   })
 })

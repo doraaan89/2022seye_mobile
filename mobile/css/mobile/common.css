@@ -14,14 +14,31 @@ img {
   width: 20px;
 }
 
+.icon.txt {
+  margin-right: 8px;
+}
+
 .icon.logo {
   width: 72px;
+}
+
+.icon.i60 {
+  width: 60px;
 }
 
 .icon.i36 {
   width: 36px;
 }
+.icon.i36 {
+  width: 36px;
+}
 
+.icon.i24 {
+  width: 24px;
+}
+.icon.i20 {
+  width: 20px;
+}
 .icon.i24 {
   width: 24px;
 }
@@ -238,7 +255,7 @@ img {
 }
 
 /* swiper */
-.swiper-area {
+.swiper-area .default {
   position: relative;
   overflow: hidden;
 }
@@ -255,24 +272,24 @@ img {
   height: 70px;
 }
 
-.swiper-area .swiper-pagination {
+.swiper-area .default .swiper-pagination {
   position: relative;
   z-index: 2;
   margin-top: 28px;
   bottom: 0;
 }
 
-.swiper-area .swiper-pagination .swiper-pagination-bullet-active {
+.swiper-area .default .swiper-pagination .swiper-pagination-bullet-active {
   width: 30px;
   background-color: #970000;
   border-radius: 12px;
 }
 
-.swiper-area .swiper-notification {
+.swiper-area .default .swiper-notification {
   display: block;
 }
 
-.swiper-area .swiper-button-prev {
+.swiper-area .default .swiper-button-prev {
   width: 22px;
   height: 30px;
   background-image: url(../../images/pages/icon_swiper-prev.png);
@@ -280,7 +297,7 @@ img {
   background-size: 12px 22px;
 }
 
-.swiper-area .swiper-button-next {
+.swiper-area .default .swiper-button-next {
   width: 22px;
   height: 30px;
   background-image: url(../../images/pages/icon_swiper-next.png);
@@ -360,6 +377,9 @@ strong,
 
 .fc-white {
   color: #fff;
+}
+.fc-blue {
+  color: #014d8d;
 }
 /* components */
 /* top-banner */
@@ -659,6 +679,7 @@ strong,
 
 .img-wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 6px;

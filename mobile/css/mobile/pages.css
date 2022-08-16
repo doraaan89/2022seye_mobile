@@ -207,13 +207,13 @@
   color: #fff;
 }
 
-.facility-wrap .swiper-area {
+.facility-wrap .swiper-area.default {
   position: relative;
   margin: 22px 12px 0;
   overflow: hidden;
 }
 
-.facility-wrap .swiper-area .swiper-pagination {
+.facility-wrap .swiper-area.default .swiper-pagination {
   position: static;
   display: flex;
   flex-wrap: wrap;
@@ -221,7 +221,7 @@
   gap: 7px;
 }
 
-.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet {
+.facility-wrap .swiper-area.default .swiper-pagination .swiper-pagination-bullet {
   display: block;
   width: calc((100% - 21px) / 4);
   height: auto;
@@ -232,16 +232,16 @@
   border-radius: 0;
 }
 
-.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet img {
+.facility-wrap .swiper-area.default .swiper-pagination .swiper-pagination-bullet img {
   display: block;
 }
 
-.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-pagination-bullet-active {
+.facility-wrap .swiper-area.default .swiper-pagination .swiper-pagination-bullet .swiper-pagination-bullet-active {
   color: #fff;
 }
 
-.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-button-next,
-.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-button-prev {
+.facility-wrap .swiper-area.default .swiper-pagination .swiper-pagination-bullet .swiper-button-next,
+.facility-wrap .swiper-area.default .swiper-pagination .swiper-pagination-bullet .swiper-button-prev {
   top: 31%;
   margin-top: -15px;
   z-index: 5;
@@ -251,11 +251,11 @@
   background-color: rgba(51, 51, 51, .2);
 }
 
-.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-button-next {
+.facility-wrap .swiper-area.default .swiper-pagination .swiper-pagination-bullet .swiper-button-next {
   right: 3px;
   background-image: url('../../images/pages/swiper_next.png');
 }
-.facility-wrap .swiper-area .swiper-pagination .swiper-pagination-bullet .swiper-button-prev {
+.facility-wrap .swiper-area.default .swiper-pagination .swiper-pagination-bullet .swiper-button-prev {
   left: 3px;
   background-image: url('../../images/pages/swiper_prev.png');
 }
@@ -362,16 +362,16 @@ section.glaucoma-cause .cause-list li .txt::before {
   background-color: #cdcdcd;
 }
 
-section.glaucoma-test .swiper-area {
+section.glaucoma-test .swiper-area.default {
   margin-top: 40px;
 }
 
 
-section.glaucoma-test .swiper-area .img-area {
+section.glaucoma-test .swiper-area.default .img-area {
   border: 1px solid #f3f3f3;
 }
 
-section.glaucoma-test .swiper-area .text-area {
+section.glaucoma-test .swiper-area.default .text-area {
   height: 30px;
   border: 1px solid #f3f3f3;
 }
@@ -549,6 +549,9 @@ section.glaucoma-test .swiper-area .text-area {
 .progress-explan .title.type3 {
   background-color: #124289;
 }
+.progress-explan .title.type4 {
+  background-color: #abd2f3;
+}
 
 .progress-explan .text {
   padding: 16px;
@@ -644,4 +647,83 @@ section.glaucoma-test .swiper-area .text-area {
 
 .cover-wrap .item img {
   width: 34px;
+}
+
+/* 비문증 */
+.list-box {
+
+}
+
+.list-box li {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.list-box .item {
+  padding: 13px 21px;
+  border: 1px solid var(--border-color);
+  background-color: #fff;
+  text-align: left;
+}
+
+.list-box .item + .item {
+  margin-top: 6px;
+}
+
+/* 소아클리닉 */
+.swiper-area.tab .swiper-wrapper {
+  flex-wrap: nowrap;
+}
+
+.swiper-area.tab .swiper-wrapper .swiper-slide {
+  flex-basis: auto;
+}
+
+.swiper-area.tab .swiper-wrapper .swiper-slide.active {
+  border-bottom-color: #bf1e2e;
+}
+
+/* 안검하수 */
+.list-box.type2 li {
+  list-style-image: url(../../images/pages/icon_check-list5.png);
+}
+
+.list-box.type2 .item:nth-child(2n) {
+  background-color: #f3f3f3;
+  border: 0;
+}
+
+.box-ptosis {
+  padding: 16px;
+}
+
+.box-ptosis .text {
+  margin: 16px 40px 0;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 16px;
+}
+
+.list-circle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 8px;
+}
+
+.list-circle .item {
+  flex-basis: calc((100% - 16px) / 3);
+}
+
+.list-circle .item .badge {
+  min-width: 70px;
+  font-size: 10px;
+}
+
+.list-circle .item:nth-child(n+1) .badge {
+  background-color: #0c4070;
+}
+
+.list-circle .item:nth-child(2n) .badge {
+  background-color: #0179bd;
 }

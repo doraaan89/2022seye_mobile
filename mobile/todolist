@@ -33,14 +33,18 @@
 - mobile_retina-vein.html
 [o] 백내장수술
 - mobile_cataract-info.html
+[o] 비문증(날파리증)
+- mobile_retina-astigmatism.html
+[o] 소아클리닉
+- mobile_child-center.html
+[o] 안검내반
+- mobile_cosmetic-entropion.html
+[o] 안검하수
+- mobile_cosmetic-ptosis.html
 
 이미지처리 해야하는 것들
 
 1day백내장수술.html
-노안수술인공수정체.html
-녹내장이란.html
-드림렌즈.html
-안검내반.html
 
 <button type="button">에스안과</button>
 <li><a href="seyeintro.html">에스안과소개</a></li>
