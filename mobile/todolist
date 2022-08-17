@@ -1,7 +1,3 @@
-[o] 에스안과 소개
-- mobile_intro.html
-[o] 의료진 소개
-- mobile_staff.html
 [o] 1day 녹내장
 - mobile_1day-glaucoma.html
 
@@ -41,6 +37,14 @@
 - mobile_cosmetic-entropion.html
 [o] 안검하수
 - mobile_cosmetic-ptosis.html
+[o] 안구건조증
+- mobile_dryeye.html
+[o] 에스안과 소개
+- mobile_seyeintro.html
+[o] 의료진 소개
+- mobile_doctors.html
+[o] 황반변성
+- mobile_macular.html
 
 이미지처리 해야하는 것들
 

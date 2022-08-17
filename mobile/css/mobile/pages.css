@@ -727,3 +727,57 @@ section.glaucoma-test .swiper-area.default .text-area {
 .list-circle .item:nth-child(2n) .badge {
   background-color: #0179bd;
 }
+
+/* 안구건조증 */
+.check-list-area.col2 .check-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px 0;
+}
+
+.check-list-area.col2 .check-list li {
+  flex-basis: 50%;
+}
+
+/* 황반변성 */
+
+.cause-list-wrap .cause-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cause-list-wrap .cause-list li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+  padding: 4px 14px;
+  background-color: #fff;
+}
+
+.cause-list-wrap .cause-list li + li {
+  margin-top: 10px;
+}
+
+.cause-list-wrap .cause-list li img {
+  width: 11px;
+  height: 9px;
+}
+
+.cause-list-wrap .cause-list li .txt {
+  position: relative;
+  margin-left: 30px;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.cause-list-wrap .cause-list li .txt::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -18px;
+  width: 1px;
+  height: 35px;
+  background-color: #cdcdcd;
+}
