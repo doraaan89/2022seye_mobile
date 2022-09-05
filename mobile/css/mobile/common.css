@@ -292,7 +292,7 @@ img.max50 {
 }
 
 /* swiper */
-.swiper-area .default {
+.swiper-area.default {
   position: relative;
   overflow: hidden;
 }
