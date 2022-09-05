@@ -493,6 +493,14 @@ section.glaucoma-test .swiper-area.default .text-area {
   gap: 15px 43px;
 }
 
+.icon-list-wrap li {
+  display: flex;
+  flex-basis: calc((100% - 43px) / 2);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .icon-list-wrap .box-solid {
   display: flex;
   justify-content: center;
