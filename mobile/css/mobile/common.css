@@ -764,7 +764,12 @@ strong,
   margin-top: 6px;
 }
 
-.consult-phone .form-phone .input-phone .dial {
+.consult-phone .form-phone .input-phone input {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.consult-phone .form-phone .input-phone .name {
   width: calc(30% - 20px);
 }
 
@@ -797,6 +802,7 @@ strong,
 .consult-phone .form-phone .btn {
   max-width: none;
   width: 100%;
+  height: 44px;
   margin-top: 10px;
 }
 
@@ -874,4 +880,13 @@ strong,
 
 .accordion-area details + details .accordion-header {
   border-top: 0;
+}
+
+/* tab-area */
+.tab-body {
+  display: none;
+}
+
+.tab-body.active {
+  display: block;
 }

@@ -12,16 +12,27 @@ $(function() {
     }
   });
 
+  // tab-body
+  function activeTabBody() {
+    console.log()
+  }
+
   // tab
   var tabBtn = '.btn-wrap-tab .btn';
   $(tabBtn).click(function() {
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
+    
+    const btnIdx = $(this).index();
+    console.log(btnIdx)
+    $(this).parents().siblings('.tab-body').hide()
+    $(this).parents().siblings('.tab-body').eq(btnIdx).show()
+    
   })
 
   // tab-header
-  var tabBtn = '.btn-wrap-tab .header';
-  $(tabBtn).click(function() {
+  var tabBtnHeader = '.btn-wrap-tab .header';
+  $(tabBtnHeader).click(function() {
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
   })
