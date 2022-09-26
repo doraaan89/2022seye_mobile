@@ -52,6 +52,8 @@
 - mobile_oneday-retina.html
 [o] 1day 백내장 수술
 - mobile_1day.html
+[o] 1day 검사/수술
+- mobile_onedayvision.html
 
 
 <button type="button">에스안과</button>
