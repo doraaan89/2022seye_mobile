@@ -58,8 +58,10 @@
 - mobile_vision-lasiklasek.html
 [o] 시력교정센터모바일
 - mobile_vision-center.html
-[] 사회공헌모바일
+[o] 사회공헌모바일
 - mobile_contribution.html
+[] 공지사항모바일
+- mobile_notice.html
 
 <button type="button">에스안과</button>
 <li><a href="seyeintro.html">에스안과소개</a></li>
