@@ -797,3 +797,12 @@ section.glaucoma-test .swiper-area.default .text-area {
   background: linear-gradient(to right bottom, #18327d 50%, #204192 50%);
   color: #fff;
 }
+
+/* 사회공헌 */
+.list-contribution .list-item + .list-item {
+  margin-top: 24px;
+}
+
+.list-contribution .category {
+  color: #970000;
+}

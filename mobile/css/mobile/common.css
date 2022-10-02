@@ -929,3 +929,76 @@ strong,
 .tab-body.active {
   display: block;
 }
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0 4px;
+}
+
+.pagination span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--border-color)
+}
+
+.pagination .num-page {
+  display: flex;
+  gap: 0 4px;
+}
+
+.num-page .num.active {
+  background-color: #b31e23;
+  color: #fff;
+}
+
+/* search */
+.search-area {
+  padding: 16px 20px;
+  font-size: 12px;
+}
+
+.search-area .select-area {
+  position: relative;
+}
+
+.search-area .select-area::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  margin-top: -5px;
+  border-top: 10px solid #111;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  pointer-events: none;
+}
+
+.search-area .select-area select {
+  position: relative;
+  appearance: none;
+  width: 100%;
+  padding: 8px;
+}
+
+.search-area .keyword {
+  display: flex;
+  margin-top: 6px;
+}
+
+.search-area .keyword input {
+  flex-basis: 100%;
+  padding: 8px;
+}
+
+.search-area .keyword .btn-search {
+  appearance: none;
+  width: 50px;
+  border: 0;
+  background-color: #454545;
+  color: #fff
+}

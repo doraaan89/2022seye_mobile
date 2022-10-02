@@ -55,4 +55,12 @@ $(function() {
     spaceBetween: 16,
     freeMode: 'true',
   })
+
+  // pagintion
+  const pagination = $('.pagination .num-page');
+
+  $(pagination).find('.num').click(function() {
+    $(this).siblings().removeClass('active');
+    $(this).addClass('active');
+  })
 })
