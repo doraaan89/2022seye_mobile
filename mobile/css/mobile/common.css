@@ -10,7 +10,6 @@ b {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 auto;
 }
 
 img.max70 {
@@ -412,6 +411,10 @@ strong,
 
 .text.fs10 {
   font-size: 10px;
+}
+
+.text.fs16 {
+  font-size: 16px;
 }
 
 .text.lh15 {

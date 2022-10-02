@@ -789,3 +789,11 @@ section.glaucoma-test .swiper-area.default .text-area {
   height: 35px;
   background-color: #cdcdcd;
 }
+
+/* 시력교정센터 */
+
+.title.background45 {
+  padding: 10px 0;
+  background: linear-gradient(to right bottom, #18327d 50%, #204192 50%);
+  color: #fff;
+}
