@@ -54,8 +54,12 @@
 - mobile_1day.html
 [o] 1day 검사/수술
 - mobile_onedayvision.html
-[] 라식라섹비교
+[o] 라식라섹비교
 - mobile_vision-lasiklasek.html
+[o] 시력교정센터모바일
+- mobile_vision-center.html
+[] 사회공헌모바일
+- mobile_contribution.html
 
 <button type="button">에스안과</button>
 <li><a href="seyeintro.html">에스안과소개</a></li>
