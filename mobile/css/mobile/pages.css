@@ -806,3 +806,61 @@ section.glaucoma-test .swiper-area.default .text-area {
 .list-contribution .category {
   color: #970000;
 }
+
+/* 공지사항 */
+
+.btn-wrap-tab.notice {
+  flex-wrap: nowrap;
+}
+
+.btn-wrap-tab.notice .btn {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: #111;
+}
+
+.btn-wrap-tab.notice .btn.active {
+  background-color: #b31e23;
+  color: #fff
+}
+
+.list-notice {
+  margin-top: 12px;
+  border-top: 2px solid #a30000;
+  font-size: 12px;
+}
+
+.list-notice .list-item {
+  padding: 16px 0;
+}
+
+.list-notice .list-item + .list-item {
+  border-top: 1px solid var(--border-color)
+}
+
+.list-notice .list-item .category {
+  padding: 4px 8px;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.list-notice .list-item .category.notice {
+  background-color: #b31e23;
+}
+
+.list-notice .list-item .category.news {
+  background-color: #999;
+}
+
+.list-notice .list-item .category.guide {
+  background-color: #4f4f4f;
+}
+
+.list-notice .list-item .list-info {
+  display: flex;
+  margin-top: 8px;
+}
+
+.list-notice .list-item .list-info li + li {
+  margin-left: 20px;
+}
