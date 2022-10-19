@@ -35,6 +35,11 @@ $(function() {
   $(tabBtnHeader).click(function() {
     $(this).addClass('active');
     $(this).siblings().removeClass('active');
+
+    const btnIdx = $(this).index();
+    console.log(btnIdx)
+    $(this).parents().siblings('.tab-body').hide()
+    $(this).parents().siblings('.tab-body').eq(btnIdx).show()
   })
 
   // swiper
