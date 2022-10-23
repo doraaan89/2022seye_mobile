@@ -62,6 +62,10 @@
 - mobile_contribution.html
 [o] 공지사항모바일
 - mobile_notice.html
+[o] 초고도근시클리닉
+- mobile_vision-1day.html
+[] 시력교정술모바일
+- mobile_vision-correction.html
 
 <button type="button">에스안과</button>
 <li><a href="seyeintro.html">에스안과소개</a></li>

@@ -89,7 +89,7 @@ img.max50 {
 /* margin, border, padding */
 
 
-.mt40{margin-top: 40px;}
+.mt40{margin-top: 40px !important;}
 .mt28{margin-top: 28px !important;}
 .mt20{margin-top: 20px;}
 .mt16{margin-top: 16px;}
@@ -130,6 +130,10 @@ img.max50 {
 
 .bg-white {
   background-color: #fff;
+}
+
+.bg-blue {
+  background-color: #e6eff7;
 }
 
 .section.full {
